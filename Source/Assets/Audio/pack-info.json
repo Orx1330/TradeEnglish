@@ -1,0 +1,9 @@
+{
+  "voice": "Eric",
+  "accent": "American",
+  "provider": "ElevenLabs",
+  "model": "eleven_multilingual_v2",
+  "clips": 234,
+  "characters": 8941,
+  "generated_utc": "2026-11-17T20:59:54.541362+00:00"
+}

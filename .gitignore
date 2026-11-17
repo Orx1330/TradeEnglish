@@ -1,0 +1,25 @@
+# Historical versions and local build output
+/Archive/
+/Build/
+/Program/
+/.build-home/
+**/bin/
+**/obj/
+**/__pycache__/
+# Local data and credentials
+.env
+.env.*
+*.user
+*.suo
+*.log
+progress*.json
+recovery-*.json
+voice-report*.json
+*secret*
+*credentials*
+# Test output
+**/test-results.txt
+**/audio-test/
+
+# Upload installer binaries through GitHub Releases
+/Installer/*.exe

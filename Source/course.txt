@@ -1,0 +1,344 @@
+# 0|البداية الواثقة|FIRST CONTACT|ابدأ حديثك مع المورد وعرّف بنفسك وبعملك.
+@ 0|مرحبًا، أنا ليث|قدّم نفسك ومجال عملك بجمل قصيرة.
+Hello, my name is Laith.|مرحبًا، اسمي ليث.
+I am a wholesale buyer.|أنا مشترٍ بالجملة.
+We sell food products.|نبيع منتجات غذائية.
+We are based in Istanbul.|مقرنا في إسطنبول.
+It is nice to meet you.|يسعدني لقاؤك.
+What is your name?|ما اسمك؟
+@ 0|التواصل مع الشركة|اطلب الوصول إلى الشخص المناسب.
+May I speak to the sales manager?|هل يمكنني التحدث إلى مدير المبيعات؟
+Who handles export orders?|من يتولى طلبات التصدير؟
+Could you share your email address?|هل يمكنك مشاركة عنوان بريدك الإلكتروني؟
+Can I contact you on WhatsApp?|هل يمكنني التواصل معك عبر واتساب؟
+Thank you for your reply.|شكرًا على ردك.
+I look forward to hearing from you.|أتطلع إلى ردك.
+@ 0|أرقام وأسعار|اربط السعر بالوحدة التي تشتريها.
+The price is ten dollars.|السعر عشرة دولارات.
+We need twenty boxes.|نحتاج عشرين علبة.
+There are twelve pieces in each box.|توجد اثنتا عشرة قطعة في كل علبة.
+The total is five hundred dollars.|الإجمالي خمسمئة دولار.
+Is the price per box or per carton?|هل السعر للعلبة أم للكرتون؟
+Please confirm the currency.|يرجى تأكيد العملة.
+@ 0|موعد واجتماع|نسّق مكالمة أو زيارة عمل.
+Are you available tomorrow?|هل أنت متاح غدًا؟
+Can we meet at ten in the morning?|هل يمكننا اللقاء في العاشرة صباحًا؟
+Please send me the factory address.|يرجى إرسال عنوان المصنع لي.
+I would like to visit your showroom.|أود زيارة صالة عرضكم.
+Could we arrange a video call?|هل يمكننا ترتيب مكالمة فيديو؟
+Let us confirm the meeting time.|دعنا نؤكد موعد الاجتماع.
+@ 0|افهم واطلب التوضيح|حافظ على الحوار عندما لا تفهم.
+Could you speak more slowly?|هل يمكنك التحدث ببطء أكثر؟
+Could you repeat that, please?|هل يمكنك تكرار ذلك، من فضلك؟
+What does this word mean?|ماذا تعني هذه الكلمة؟
+Could you write that down?|هل يمكنك كتابة ذلك؟
+Let me check that I understand.|دعني أتأكد من أنني فهمت.
+Do you mean fifty or fifteen?|هل تقصد خمسين أم خمس عشرة؟
+@ 0|قدّم نشاطك التجاري|اشرح ما تبحث عنه في شريكك.
+We supply shops and supermarkets.|نورّد للمتاجر ومحلات السوبرماركت.
+We are interested in your products.|نحن مهتمون بمنتجاتكم.
+We are looking for a reliable supplier.|نبحث عن مورد موثوق.
+We would like to start with a small order.|نود البدء بطلب صغير.
+Our customers prefer good quality.|يفضل عملاؤنا الجودة الجيدة.
+Could you tell me about your company?|هل يمكنك إخباري عن شركتكم؟
+# 1|اعرف منتجك|PRODUCT EXPERT|تحدث بدقة عن الأغذية والحلويات والشوكولاتة.
+@ 1|كتالوج الحلويات|اسأل عن الأصناف المتاحة.
+Could you send me your catalogue?|هل يمكنك إرسال الكتالوج؟
+Do you sell dark chocolate?|هل تبيعون الشوكولاتة الداكنة؟
+We are interested in filled chocolates.|نحن مهتمون بالشوكولاتة المحشوة.
+Do you offer sugar-free sweets?|هل تقدمون حلويات خالية من السكر؟
+Which products are your best sellers?|ما منتجاتكم الأكثر مبيعًا؟
+Are these items currently in stock?|هل هذه الأصناف متوفرة حاليًا؟
+@ 1|المكونات والحساسية|اطلب معلومات المنتج بوضوح.
+What are the ingredients?|ما المكونات؟
+Does this product contain nuts?|هل يحتوي هذا المنتج على مكسرات؟
+Does it contain milk or soy?|هل يحتوي على الحليب أو الصويا؟
+Please send us the allergen information.|يرجى إرسال معلومات مسببات الحساسية لنا.
+Is this product halal certified?|هل هذا المنتج حاصل على شهادة حلال؟
+Could you share a copy of the certificate?|هل يمكنك مشاركة نسخة من الشهادة؟
+@ 1|الصلاحية والتواريخ|ميّز بين المدة والتاريخ.
+What is the shelf life?|ما مدة الصلاحية؟
+What is the production date?|ما تاريخ الإنتاج؟
+What is the expiry date?|ما تاريخ انتهاء الصلاحية؟
+How much shelf life will remain on delivery?|كم سيتبقى من مدة الصلاحية عند التسليم؟
+Please confirm the batch number.|يرجى تأكيد رقم التشغيلة.
+We need products from a recent batch.|نحتاج منتجات من تشغيلة حديثة.
+@ 1|عينات وفحص الجودة|اطلب العينة وحدّد ما تريد فحصه.
+Could you send us some samples?|هل يمكنكم إرسال بعض العينات؟
+Are the samples free?|هل العينات مجانية؟
+We would like to check the taste and texture.|نود فحص الطعم والقوام.
+Does the sample match the final product?|هل تطابق العينة المنتج النهائي؟
+The packaging looks good.|تبدو العبوة جيدة.
+We will send our feedback next week.|سنرسل ملاحظاتنا الأسبوع القادم.
+@ 1|العبوات والأحجام|تعامل مع القطعة والعلبة والكرتون.
+What is the weight of each piece?|ما وزن كل قطعة؟
+How many boxes are in each carton?|كم علبة في كل كرتون؟
+Please confirm the net weight.|يرجى تأكيد الوزن الصافي.
+What are the carton dimensions?|ما أبعاد الكرتون؟
+Can we order different pack sizes?|هل يمكننا طلب أحجام عبوات مختلفة؟
+We need individually wrapped pieces.|نحتاج قطعًا مغلفة بشكل فردي.
+@ 1|أغذية وفواكه مجففة|وسّع مفرداتك خارج الحلويات.
+Do you supply dried tomatoes?|هل تورّدون الطماطم المجففة؟
+We are looking for dried apricots.|نبحث عن المشمش المجفف.
+Is there any added sugar?|هل يوجد سكر مضاف؟
+Are the products packed in bulk?|هل المنتجات معبأة بكميات كبيرة؟
+Could you send the product specifications?|هل يمكنك إرسال مواصفات المنتج؟
+We need a consistent size and colour.|نحتاج حجمًا ولونًا متجانسين.
+# 2|اشترِ بذكاء|WHOLESALE BUYER|قارن العروض وحدّد الكمية وشروط الطلب.
+@ 2|عرض الأسعار|اجمع تفاصيل العرض قبل المقارنة.
+Please send us your wholesale price list.|يرجى إرسال قائمة أسعار الجملة لنا.
+What is the price per carton?|ما سعر الكرتون؟
+Does the price include packaging?|هل يشمل السعر التعبئة؟
+How long is this quotation valid?|ما مدة صلاحية عرض السعر هذا؟
+Please list the costs separately.|يرجى إدراج التكاليف بشكل منفصل.
+Could you quote for one hundred cartons?|هل يمكنك تقديم سعر لمئة كرتون؟
+@ 2|الكمية الدنيا|ناقش حجم طلبك الأول.
+What is your minimum order quantity?|ما الحد الأدنى لكمية الطلب؟
+Does the minimum apply to each flavour?|هل ينطبق الحد الأدنى على كل نكهة؟
+Can we combine different products?|هل يمكننا الجمع بين منتجات مختلفة؟
+We would like to place a trial order.|نود تقديم طلب تجريبي.
+Can you reduce the minimum for our first order?|هل يمكنكم تقليل الحد الأدنى لطلبنا الأول؟
+We can increase the quantity later.|يمكننا زيادة الكمية لاحقًا.
+@ 2|التفاوض على الخصم|اربط طلب الخصم بسبب تجاري.
+Can you offer a better price?|هل يمكنك تقديم سعر أفضل؟
+Is there a discount for larger orders?|هل يوجد خصم للطلبات الأكبر؟
+Your price is above our budget.|سعركم أعلى من ميزانيتنا.
+What is your best price for this quantity?|ما أفضل سعر لديكم لهذه الكمية؟
+Could you include shipping at this price?|هل يمكنكم تضمين الشحن بهذا السعر؟
+If we order more, can you lower the unit price?|إذا طلبنا أكثر، هل يمكنكم خفض سعر الوحدة؟
+@ 2|مقارنة الموردين|وضّح أسباب اختيار العرض.
+We are comparing several offers.|نحن نقارن عدة عروض.
+Your delivery time is shorter.|مدة التسليم لديكم أقصر.
+The other offer includes packaging.|يشمل العرض الآخر التعبئة.
+Quality is more important than a small discount.|الجودة أهم من خصم صغير.
+Could you explain the price difference?|هل يمكنك توضيح فرق السعر؟
+We need to compare the same specifications.|نحتاج إلى مقارنة المواصفات نفسها.
+@ 2|الدفع والفاتورة|استوضح شروط الدفع قبل التأكيد.
+What are your payment terms?|ما شروط الدفع لديكم؟
+Please send us a pro forma invoice.|يرجى إرسال فاتورة أولية لنا.
+Can we pay by bank transfer?|هل يمكننا الدفع بتحويل بنكي؟
+How much is the deposit?|كم قيمة العربون؟
+When is the balance due?|متى يستحق المبلغ المتبقي؟
+Please confirm your bank details in writing.|يرجى تأكيد بياناتكم البنكية كتابةً.
+@ 2|تأكيد الطلب|راجع تفاصيل طلبية مكتملة.
+We would like to confirm our order.|نود تأكيد طلبنا.
+Please check the quantities on the invoice.|يرجى التحقق من الكميات في الفاتورة.
+The chocolate flavour should be hazelnut.|يجب أن تكون نكهة الشوكولاتة بالبندق.
+Please do not replace any items without approval.|يرجى عدم استبدال أي أصناف دون موافقة.
+Could you send written confirmation?|هل يمكنك إرسال تأكيد كتابي؟
+We will proceed once the details are confirmed.|سنمضي قدمًا بعد تأكيد التفاصيل.
+# 3|من المصنع إلى المخزن|SHIPMENT TRACKER|نسّق التعبئة والشحن والتسليم باللغة الإنجليزية.
+@ 3|موعد الإنتاج|اسأل عن الجاهزية والوقت المتوقع.
+What is the production lead time?|ما المدة اللازمة للإنتاج؟
+When will the order be ready?|متى سيكون الطلب جاهزًا؟
+Can you meet our requested deadline?|هل يمكنكم الالتزام بالموعد الذي طلبناه؟
+Please update us on the production status.|يرجى إطلاعنا على حالة الإنتاج.
+Let us know if there are any delays.|أخبرونا إذا حدث أي تأخير.
+Could you send photos before dispatch?|هل يمكنكم إرسال صور قبل الإرسال؟
+@ 3|البالتات والتغليف|ناقش حماية الشحنة وأبعادها.
+How many pallets are in the shipment?|كم بالتة في الشحنة؟
+What is the total gross weight?|ما الوزن الإجمالي الكلي؟
+Please secure the cartons on the pallets.|يرجى تثبيت الكراتين على البالتات.
+Are the cartons suitable for export?|هل الكراتين مناسبة للتصدير؟
+Please label each pallet clearly.|يرجى وضع ملصق واضح على كل بالتة.
+Can you confirm the total shipment volume?|هل يمكنكم تأكيد الحجم الكلي للشحنة؟
+@ 3|عرض الشحن|اطلب عرضًا واضح التفاصيل.
+We need a freight quotation.|نحتاج عرض سعر للشحن.
+What is the estimated transit time?|ما مدة النقل التقديرية؟
+Does the quote include insurance?|هل يشمل عرض السعر التأمين؟
+Are there any additional charges?|هل توجد رسوم إضافية؟
+Please specify the delivery location.|يرجى تحديد مكان التسليم.
+Could you explain what is included in this price?|هل يمكنك توضيح ما يشمله هذا السعر؟
+@ 3|مستندات الشحنة|اطلب المستند وتحقق من بياناته.
+Please send us the packing list.|يرجى إرسال قائمة التعبئة لنا.
+We need a copy of the commercial invoice.|نحتاج نسخة من الفاتورة التجارية.
+Could you send the certificate of origin?|هل يمكنك إرسال شهادة المنشأ؟
+Please check the consignee details.|يرجى التحقق من بيانات المرسل إليه.
+The quantities do not match the packing list.|الكميات لا تطابق قائمة التعبئة.
+Please correct the document before dispatch.|يرجى تصحيح المستند قبل الإرسال.
+@ 3|حماية الشوكولاتة|استوضح ظروف النقل والتخزين.
+What storage temperature do you recommend?|ما درجة حرارة التخزين التي توصي بها؟
+How will you protect the chocolate from heat?|كيف ستحمون الشوكولاتة من الحرارة؟
+Is temperature-controlled transport available?|هل يتوفر نقل بدرجة حرارة مضبوطة؟
+Please keep the products away from direct sunlight.|يرجى إبقاء المنتجات بعيدًا عن أشعة الشمس المباشرة.
+Could you share the storage instructions?|هل يمكنك مشاركة تعليمات التخزين؟
+We need to maintain product quality during transport.|نحتاج الحفاظ على جودة المنتج أثناء النقل.
+@ 3|الاستلام والمتابعة|تابع الشحنة حتى وصولها.
+Has the shipment left the warehouse?|هل غادرت الشحنة المستودع؟
+Could you send the tracking details?|هل يمكنك إرسال تفاصيل التتبع؟
+What is the expected arrival date?|ما تاريخ الوصول المتوقع؟
+Please notify us before delivery.|يرجى إخطارنا قبل التسليم.
+We have received the shipment.|لقد استلمنا الشحنة.
+We will inspect the goods today.|سنفحص البضاعة اليوم.
+# 4|حلول وشراكات|BUSINESS PARTNER|حل المشكلات وطوّر علاقة طويلة الأجل.
+@ 4|النقص والتلف|اشرح المشكلة وحدّد الأدلة.
+Some cartons arrived damaged.|وصلت بعض الكراتين تالفة.
+There are ten boxes missing.|هناك عشر علب ناقصة.
+The products do not match the approved sample.|المنتجات لا تطابق العينة المعتمدة.
+We have attached photos of the damage.|أرفقنا صورًا للتلف.
+Could you investigate this issue?|هل يمكنك التحقيق في هذه المشكلة؟
+Please let us know how you will resolve it.|يرجى إخبارنا كيف ستحلون المشكلة.
+@ 4|التعويض والمتابعة|اطلب حلًا محددًا وتابع تنفيذه.
+Could you arrange a replacement?|هل يمكنك ترتيب استبدال؟
+We would prefer a refund for the missing items.|نفضل استرداد قيمة الأصناف الناقصة.
+Could you issue a credit note?|هل يمكنكم إصدار إشعار دائن؟
+Please confirm when the replacements will arrive.|يرجى تأكيد موعد وصول البدائل.
+Thank you for resolving this promptly.|شكرًا على حل هذا الأمر بسرعة.
+Let us agree on a way to prevent this happening again.|دعنا نتفق على طريقة لمنع تكرار ذلك.
+@ 4|علامتك التجارية|ناقش مشروع علامة خاصة.
+Can you produce under our brand name?|هل يمكنكم الإنتاج باسم علامتنا التجارية؟
+What is the minimum order for private label products?|ما الحد الأدنى لطلب منتجات العلامة الخاصة؟
+Can you provide Arabic labels?|هل يمكنكم توفير ملصقات باللغة العربية؟
+Who will prepare the packaging design?|من سيجهز تصميم العبوة؟
+We need to approve the artwork before printing.|نحتاج الموافقة على التصميم قبل الطباعة.
+Please send a packaging sample for approval.|يرجى إرسال عينة عبوة للموافقة عليها.
+@ 4|التوزيع والوكالة|استكشف التعاون وشروطه باللغة.
+We are interested in distributing your products.|نحن مهتمون بتوزيع منتجاتكم.
+Do you already have a distributor in this market?|هل لديكم موزع بالفعل في هذه السوق؟
+Which sales channels do you support?|ما قنوات البيع التي تدعمونها؟
+Would you consider an exclusive distribution arrangement?|هل تدرسون ترتيبًا للتوزيع الحصري؟
+What sales targets would you expect?|ما أهداف المبيعات التي تتوقعونها؟
+We would like to review the proposed terms.|نود مراجعة الشروط المقترحة.
+@ 4|اجتماع عمل|أدر نقاشًا منظمًا وواضحًا.
+Let us start with the main priorities.|دعنا نبدأ بالأولويات الرئيسية.
+Could you clarify your position on pricing?|هل يمكنك توضيح موقفكم بشأن التسعير؟
+I understand your concern about the order size.|أتفهم قلقكم بشأن حجم الطلب.
+Let us summarise what we have agreed so far.|دعنا نلخص ما اتفقنا عليه حتى الآن.
+Who will be responsible for the next step?|من سيكون مسؤولًا عن الخطوة التالية؟
+I will send a summary after the meeting.|سأرسل ملخصًا بعد الاجتماع.
+@ 4|رسائل متابعة محترفة|اكتب رسائل دقيقة ومهذبة.
+I am following up on our previous discussion.|أتابع معكم بخصوص نقاشنا السابق.
+Please find our order details attached.|تجدون تفاصيل طلبنا مرفقة.
+Could you confirm receipt of this email?|هل يمكنكم تأكيد استلام هذا البريد؟
+We would appreciate a reply by Thursday.|نقدر إرسال رد بحلول يوم الخميس.
+Please let us know if you need further information.|يرجى إخبارنا إذا احتجتم إلى معلومات إضافية.
+Thank you for your continued cooperation.|شكرًا على تعاونكم المستمر.
+# 5|تحديات التاجر|NEGOTIATION LAB|تدرّب على صياغة الحجج والبدائل والتفاهمات الدقيقة.
+@ 5|تفاوض بشرط مقابل|اربط تنازلك بما تريد الحصول عليه.
+If you can reduce the price, we can increase the volume.|إذا استطعتم خفض السعر، يمكننا زيادة الكمية.
+We could accept this price provided that delivery is included.|يمكننا قبول هذا السعر بشرط أن يشمل التسليم.
+Would a longer lead time help you offer a better price?|هل تساعدكم مهلة أطول على تقديم سعر أفضل؟
+We can be flexible on packaging, but not on quality.|يمكننا المرونة في التعبئة، لكن ليس في الجودة.
+What alternatives could you propose?|ما البدائل التي يمكنكم اقتراحها؟
+Let us find an arrangement that works for both sides.|دعنا نجد ترتيبًا يناسب الطرفين.
+@ 5|الاعتراض بثقة|ارفض أو اعترض مع الحفاظ على العلاقة.
+We appreciate the offer, but the current terms are difficult for us.|نقدر العرض، لكن الشروط الحالية صعبة بالنسبة لنا.
+Our main concern is the remaining shelf life.|قلقنا الرئيسي هو مدة الصلاحية المتبقية.
+Could you explain the reason for the price increase?|هل يمكنكم توضيح سبب زيادة السعر؟
+We cannot commit until the specifications are confirmed.|لا يمكننا الالتزام قبل تأكيد المواصفات.
+We would prefer to postpone rather than compromise on quality.|نفضل التأجيل على التنازل عن الجودة.
+We remain interested in finding a suitable solution.|ما زلنا مهتمين بإيجاد حل مناسب.
+@ 5|توقع الطلب|ناقش التخطيط والموسمية.
+We expect demand to increase before the holiday season.|نتوقع زيادة الطلب قبل موسم الأعياد.
+These figures are estimates, not confirmed orders.|هذه الأرقام تقديرات وليست طلبات مؤكدة.
+Could you reserve production capacity for us?|هل يمكنكم حجز طاقة إنتاجية لنا؟
+We would like deliveries to be spread across three months.|نود توزيع التسليمات على ثلاثة أشهر.
+How much notice do you need for changes?|كم مهلة الإخطار التي تحتاجونها للتغييرات؟
+Let us review the forecast at the end of each month.|دعنا نراجع التوقعات في نهاية كل شهر.
+@ 5|توضيح الشروط المكتوبة|اسأل عن الغموض في المقترح التجاري.
+Could you clarify what this clause covers?|هل يمكنكم توضيح ما يغطيه هذا البند؟
+Please specify the responsibilities of each party.|يرجى تحديد مسؤوليات كل طرف.
+How would changes to the order be handled?|كيف ستتم معالجة التغييرات على الطلب؟
+We need a clear process for reporting quality issues.|نحتاج إجراءً واضحًا للإبلاغ عن مشكلات الجودة.
+Could we put the agreed changes in writing?|هل يمكننا توثيق التغييرات المتفق عليها كتابةً؟
+We will have the draft reviewed before signing.|سنعرض المسودة للمراجعة قبل التوقيع.
+@ 5|تصعيد مشكلة بلباقة|احصل على قرار وخطة واضحة.
+This delay is affecting our commitments to customers.|هذا التأخير يؤثر على التزاماتنا تجاه العملاء.
+Could you escalate this to the person responsible?|هل يمكنكم تصعيد الأمر إلى الشخص المسؤول؟
+We need a realistic recovery plan by tomorrow.|نحتاج خطة معالجة واقعية بحلول الغد.
+Please distinguish confirmed dates from estimates.|يرجى التمييز بين المواعيد المؤكدة والتقديرات.
+Can you suggest a partial shipment as an interim solution?|هل يمكنكم اقتراح شحنة جزئية كحل مؤقت؟
+Let us agree on regular updates until this is resolved.|دعنا نتفق على تحديثات منتظمة حتى حل الأمر.
+@ 5|إغلاق الصفقة والشراكة|اختم التفاوض بتفاهم واضح.
+We are ready to proceed on the terms discussed.|نحن مستعدون للمضي وفق الشروط التي ناقشناها.
+Before we confirm, let us review the outstanding points.|قبل التأكيد، دعنا نراجع النقاط العالقة.
+Please send the final version for our review.|يرجى إرسال النسخة النهائية لمراجعتنا.
+We value a transparent and reliable partnership.|نقدر الشراكة الشفافة والموثوقة.
+Let us schedule a review after the first delivery.|دعنا نحدد مراجعة بعد التسليم الأول.
+We look forward to building a long-term relationship.|نتطلع إلى بناء علاقة طويلة الأجل.
+# 6|خبير توريد الأغذية|FOOD SOURCING|حدّد المواصفات وراقب الجودة والمخزون بدقة.
+@ 6|مواصفات الشوكولاتة|ناقش التركيب والطعم وحجم العبوة.
+What percentage of cocoa does this chocolate contain?|ما نسبة الكاكاو في هذه الشوكولاتة؟
+We prefer a less sweet filling with a smooth texture.|نفضّل حشوة أقل حلاوة ذات قوام ناعم.
+Please specify the net weight of each retail pack.|يرجى تحديد الوزن الصافي لكل عبوة مخصصة للبيع بالتجزئة.
+Does the coating contain cocoa butter or vegetable fat?|هل تحتوي الطبقة الخارجية على زبدة الكاكاو أم الدهون النباتية؟
+We need individually wrapped pieces for wholesale distribution.|نحتاج قطعًا مغلفة بشكل منفرد للتوزيع بالجملة.
+Please confirm the number of pieces in each carton.|يرجى تأكيد عدد القطع في كل كرتون.
+@ 6|المكونات والملصق|اطلب مستندات المكونات وراجع بيانات المنتج.
+Could you provide the latest ingredient specification sheet?|هل يمكنكم تزويدنا بأحدث ورقة مواصفات للمكونات؟
+Is this product made on equipment that also handles nuts?|هل يُصنع هذا المنتج على معدات تُستخدم أيضًا للمكسرات؟
+Please send a clear image of the nutrition label.|يرجى إرسال صورة واضحة لملصق المعلومات الغذائية.
+We need to review the Arabic label before printing.|نحتاج مراجعة الملصق العربي قبل الطباعة.
+Can you provide a valid certificate for this product?|هل يمكنكم تقديم شهادة سارية لهذا المنتج؟
+Please notify us before making any ingredient changes.|يرجى إبلاغنا قبل إجراء أي تغييرات في المكونات.
+@ 6|فحص العينة|اربط الموافقة على العينة بمواصفات الطلب.
+We will evaluate the samples for taste and consistency.|سنقيّم العينات من حيث الطعم وتجانس الجودة.
+The sample packaging does not match the agreed design.|تغليف العينة لا يطابق التصميم المتفق عليه.
+Please keep an approved sample from this production batch.|يرجى الاحتفاظ بعينة معتمدة من دفعة الإنتاج هذه.
+Can you send a revised sample with a thicker outer box?|هل يمكنكم إرسال عينة معدلة بصندوق خارجي أكثر سماكة؟
+Our approval applies only to the specifications listed here.|موافقتنا تنطبق فقط على المواصفات المذكورة هنا.
+We will confirm the bulk order after sample approval.|سنؤكد طلب الجملة بعد اعتماد العينة.
+@ 6|الحرارة والتخزين|اتفق على ظروف النقل والتخزين المناسبة للمنتج.
+What storage conditions do you recommend for this product?|ما ظروف التخزين التي توصي بها لهذا المنتج؟
+Please specify the acceptable temperature range in writing.|يرجى تحديد نطاق درجات الحرارة المقبول كتابةً.
+Can the carrier provide a temperature record for the journey?|هل يمكن للناقل توفير سجل درجات الحرارة أثناء الرحلة؟
+We noticed signs of melting in several chocolate packs.|لاحظنا علامات ذوبان في عدة عبوات شوكولاتة.
+Please keep these cartons away from direct sunlight.|يرجى إبقاء هذه الكراتين بعيدًا عن أشعة الشمس المباشرة.
+We need to agree on a procedure for temperature deviations.|نحتاج الاتفاق على إجراء للتعامل مع انحراف درجات الحرارة عن النطاق المطلوب.
+@ 6|الصلاحية وتتبع الدفعات|تابع تواريخ الإنتاج وأرقام الدفعات.
+Please list the batch numbers on the packing list.|يرجى إدراج أرقام الدفعات في قائمة التعبئة.
+We require at least nine months of remaining shelf life.|نشترط بقاء تسعة أشهر على الأقل من الصلاحية.
+Which customers received products from the affected batch?|أي العملاء استلموا منتجات من الدفعة المتأثرة؟
+Please hold the affected stock until the review is complete.|يرجى تعليق التصرف في المخزون المتأثر حتى اكتمال المراجعة.
+We rotate our stock by the earliest expiry date.|نصرّف مخزوننا حسب تاريخ انتهاء الصلاحية الأقرب.
+Can you trace this batch back to its production date?|هل يمكنكم تتبع دفعة الإنتاج هذه لمعرفة تاريخ إنتاجها؟
+@ 6|التوقعات وإعادة الطلب|وازن بين الطلب المتوقع والمخزون المتاح.
+Our weekly sales have increased faster than expected.|ارتفعت مبيعاتنا الأسبوعية أسرع من المتوقع.
+How much stock is available for immediate dispatch?|ما كمية المخزون المتاحة للشحن الفوري؟
+We would like to reserve capacity for the holiday season.|نرغب في حجز طاقة إنتاجية لموسم الأعياد.
+This forecast is an estimate, not a confirmed purchase order.|هذا التوقع تقديري وليس أمر شراء مؤكدًا.
+Please propose a reorder schedule based on our sales data.|يرجى اقتراح جدول لإعادة الطلب بناءً على بيانات مبيعاتنا.
+We need a backup supplier for our best-selling items.|نحتاج موردًا بديلًا للأصناف الأكثر مبيعًا لدينا.
+# 7|قيادة التفاوض والشراكات|DEAL LEADERSHIP|ناقش المخاطر والأرباح وشروط التعاون بوضوح.
+@ 7|التكلفة والربح|افصل سعر البضاعة عن التكلفة الإجمالية.
+Could you break down the quotation by cost item?|هل يمكنكم تفصيل عرض السعر حسب بنود التكلفة؟
+Our target margin must cover storage and distribution costs.|يجب أن يغطي هامش الربح المستهدف تكاليف التخزين والتوزيع.
+The lower unit price does not offset the higher freight cost.|انخفاض سعر الوحدة لا يعوض ارتفاع تكلفة الشحن.
+Please quote the same quantities so we can compare fairly.|يرجى تسعير الكميات نفسها حتى نتمكن من المقارنة بعدل.
+What exchange rate was used to prepare this quotation?|ما سعر الصرف المستخدم لإعداد عرض السعر هذا؟
+We need to calculate the total landed cost before deciding.|نحتاج حساب التكلفة الإجمالية حتى وصول البضاعة قبل اتخاذ القرار.
+@ 7|تنازلات متبادلة|قدّم بديلًا واضحًا مقابل كل تنازل.
+If we commit to quarterly orders, could you improve the price?|إذا التزمنا بطلبات ربع سنوية، فهل يمكنكم تحسين السعر؟
+We can accept a longer lead time in exchange for a discount.|يمكننا قبول مهلة توريد أطول مقابل خصم.
+That proposal is beyond our current budget.|هذا المقترح يتجاوز ميزانيتنا الحالية.
+What flexibility do you have on the payment schedule?|ما المرونة المتاحة لديكم في جدول الدفع؟
+Let us separate the issues and address them one at a time.|دعونا نفصل المسائل ونعالجها واحدة تلو الأخرى.
+We are prepared to proceed if these two points are resolved.|نحن مستعدون للمضي قدمًا إذا حُلّت هاتان النقطتان.
+@ 7|الدفع والمخاطر|وضّح شروط الدفعات وتحقق من المستندات.
+We propose paying the balance after the agreed inspection.|نقترح دفع الرصيد المتبقي بعد الفحص المتفق عليه.
+Please confirm the payment currency and bank charges.|يرجى تأكيد عملة الدفع والرسوم البنكية.
+We need written approval before changing any bank details.|نحتاج موافقة مكتوبة قبل تغيير أي بيانات بنكية.
+Can we agree on a credit limit for repeat orders?|هل يمكننا الاتفاق على حد ائتماني للطلبات المتكررة؟
+The invoice is overdue; could you confirm the payment date?|تأخر سداد الفاتورة؛ هل يمكنكم تأكيد موعد الدفع؟
+Please reconcile the outstanding balance with our statement.|يرجى مطابقة الرصيد المستحق مع كشف حسابنا.
+@ 7|التوزيع والحصرية|ناقش النطاق والأهداف ومراجعة الأداء.
+Which territory would the distribution agreement cover?|ما المنطقة التي ستشملها اتفاقية التوزيع؟
+We would consider exclusivity subject to realistic sales targets.|قد ندرس الحصرية بشرط وضع أهداف مبيعات واقعية.
+How will online sales be handled within our territory?|كيف ستُدار المبيعات عبر الإنترنت داخل منطقتنا؟
+We suggest reviewing performance every six months.|نقترح مراجعة الأداء كل ستة أشهر.
+Please clarify the conditions for renewing the agreement.|يرجى توضيح شروط تجديد الاتفاقية.
+We need to agree on how unsold stock will be handled.|نحتاج الاتفاق على كيفية التعامل مع المخزون غير المباع.
+@ 7|علامتك التجارية|نسّق التصميم والإنتاج للعلامة الخاصة.
+Can you manufacture this product under our own brand?|هل يمكنكم تصنيع هذا المنتج تحت علامتنا التجارية؟
+Who owns the packaging artwork after we pay the design fee?|من يملك تصميم التغليف بعد دفع رسوم التصميم؟
+Please confirm the setup cost for the first production run.|يرجى تأكيد تكلفة التجهيز لأول دورة إنتاج.
+We need a printed proof before approving mass production.|نحتاج نموذجًا مطبوعًا قبل الموافقة على الإنتاج بكميات كبيرة.
+No design changes should be made without our written approval.|يجب عدم إجراء أي تغييرات في التصميم دون موافقتنا المكتوبة.
+Can the remaining packaging be stored for our next order?|هل يمكن تخزين مواد التغليف المتبقية لطلبنا القادم؟
+@ 7|إغلاق الصفقة ومتابعتها|لخّص ما اتفقت عليه وحدد مسؤوليات المتابعة.
+Let me summarise the points we have agreed on today.|دعني ألخص النقاط التي اتفقنا عليها اليوم.
+There are two outstanding issues before we can sign.|هناك مسألتان عالقتان قبل أن نتمكن من التوقيع.
+Please identify who is responsible for each action item.|يرجى تحديد المسؤول عن كل مهمة متابعة.
+We will review the draft and respond by Thursday.|سنراجع المسودة ونرد بحلول يوم الخميس.
+This email records our discussion and requests your confirmation.|يوثق هذا البريد نقاشنا ويطلب تأكيدكم.
+Once the final terms are approved, we can issue the purchase order.|بعد اعتماد الشروط النهائية يمكننا إصدار أمر الشراء.
