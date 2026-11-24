@@ -2,6 +2,7 @@
 #   - iOS:     an unsigned TradeEnglish.ipa, to install with Sideloadly (it signs with your Apple ID)
 #   - Android: TradeEnglish.apk, signed with the debug key, to install directly on the phone
 # Download both from the run's "Artifacts" section. Run it by hand from the Actions tab too.
+# Build errors are also published as annotations on the run, readable without signing in.
 name: Build mobile app
 
 on:
@@ -13,7 +14,8 @@ on:
 
 concurrency:
   group: mobile-${{ github.ref }}
-  cancel-in-progress: true
+  # a newer push waits for the running build instead of cancelling it half way
+  cancel-in-progress: false
 
 jobs:
   ios:
@@ -55,37 +57,66 @@ jobs:
 
       - name: Build app (unsigned)
         run: |
-          set -o pipefail
           WORKSPACE=$(ls -d ios/*.xcworkspace | head -1)
           SCHEME=$(basename "$WORKSPACE" .xcworkspace)
           echo "SCHEME=$SCHEME" >> "$GITHUB_ENV"
+          echo "workspace=$WORKSPACE scheme=$SCHEME"
+          # the full log goes to build.log; the step fails when xcodebuild fails
+          set +e
           xcodebuild \
             -workspace "$WORKSPACE" \
             -scheme "$SCHEME" \
             -configuration Release \
             -sdk iphoneos \
-            -destination "generic/platform=iOS" \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            build 2>&1 | tee build.log | grep -E "error:|warning: .*deprecated|\*\* BUILD" || true
-          test -d "build/Build/Products/Release-iphoneos/$SCHEME.app"
+            build > build.log 2>&1
+          STATUS=$?
+          set -e
+          grep -E "BUILD (SUCCEEDED|FAILED)" build.log || true
+          echo "xcodebuild exit status: $STATUS"
+          exit $STATUS
 
-      - name: Show compile errors
+      - name: Report iOS build errors
         if: failure()
         run: |
-          echo "### iOS compile errors" >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
-          grep -E "error:" build.log | sort -u | head -60 | tee -a "$GITHUB_STEP_SUMMARY" || true
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          touch build.log
+          grep -E "error:|xcodebuild: error" build.log | sort -u | head -10 | while IFS= read -r line; do
+            echo "::error title=iOS build::${line:0:900}"
+          done
+          tail -40 build.log | while IFS= read -r line; do
+            echo "::notice title=iOS log tail::${line:0:900}"
+          done
+          {
+            echo "### iOS build errors"
+            echo '```'
+            grep -E "error:|xcodebuild: error" build.log | sort -u | head -60
+            echo '```'
+            echo "### Last 80 lines of the build log"
+            echo '```'
+            tail -80 build.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Package IPA
         run: |
+          APP="build/Build/Products/Release-iphoneos/$SCHEME.app"
+          if [ ! -x "$APP/$SCHEME" ]; then
+            echo "::error title=iOS package::the app has no executable at $APP"
+            ls -la "$APP" || true
+            exit 1
+          fi
           mkdir -p Payload
-          cp -R "build/Build/Products/Release-iphoneos/$SCHEME.app" Payload/
+          cp -R "$APP" Payload/
           zip -qry TradeEnglish.ipa Payload
-          ls -lh TradeEnglish.ipa
+          SIZE=$(stat -f%z TradeEnglish.ipa)
+          echo "IPA size: $SIZE bytes"
+          if [ "$SIZE" -lt 5000000 ]; then
+            echo "::error title=iOS package::IPA is only $SIZE bytes"
+            exit 1
+          fi
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
@@ -93,6 +124,7 @@ jobs:
           name: TradeEnglish-ios-ipa
           path: Mobile/TradeEnglish.ipa
           retention-days: 14
+          if-no-files-found: error
 
   android:
     name: Android (APK)
@@ -135,13 +167,19 @@ jobs:
           set -o pipefail
           ./gradlew assembleRelease -PreactNativeArchitectures=arm64-v8a --no-daemon 2>&1 | tee ../gradle.log
 
-      - name: Show build errors
+      - name: Report Android build errors
         if: failure()
         run: |
-          echo "### Android build errors" >> "$GITHUB_STEP_SUMMARY"
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
-          grep -E "error:|FAILED|What went wrong" -A3 gradle.log | head -80 | tee -a "$GITHUB_STEP_SUMMARY" || true
-          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          touch gradle.log
+          grep -E "error:|What went wrong" -A2 gradle.log | grep -v "^--$" | head -10 | while IFS= read -r line; do
+            echo "::error title=Android build::${line:0:900}"
+          done
+          {
+            echo "### Android build errors"
+            echo '```'
+            grep -E "error:|FAILED|What went wrong" -A3 gradle.log | head -80
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Collect APK
         run: |
@@ -154,3 +192,4 @@ jobs:
           name: TradeEnglish-android-apk
           path: Mobile/TradeEnglish.apk
           retention-days: 14
+          if-no-files-found: error
