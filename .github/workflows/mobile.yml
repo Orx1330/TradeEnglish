@@ -64,38 +64,59 @@ jobs:
           SCHEME=$(basename "$WORKSPACE" .xcworkspace)
           echo "SCHEME=$SCHEME" >> "$GITHUB_ENV"
           echo "workspace=$WORKSPACE scheme=$SCHEME"
-          # the full log goes to build.log; the step fails when xcodebuild fails
+          build() {
+            xcodebuild \
+              -workspace "$WORKSPACE" \
+              -scheme "$SCHEME" \
+              -configuration Release \
+              -sdk iphoneos \
+              -derivedDataPath build \
+              CODE_SIGNING_ALLOWED=NO \
+              CODE_SIGNING_REQUIRED=NO \
+              CODE_SIGN_IDENTITY="" \
+              build > build.log 2>&1
+          }
+          # 1) everything compiled here, with the runner's newest Xcode
           set +e
-          xcodebuild \
-            -workspace "$WORKSPACE" \
-            -scheme "$SCHEME" \
-            -configuration Release \
-            -sdk iphoneos \
-            -derivedDataPath build \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY="" \
-            build > build.log 2>&1
-          STATUS=$?
+          build; STATUS=$?
+          grep -E "BUILD (SUCCEEDED|FAILED)" build.log | tail -1
+          if [ $STATUS -ne 0 ]; then
+            # 2) Expo's own precompiled module binaries, so expo-modules-jsi is not compiled here
+            echo "::warning title=iOS build::source build failed; retrying with Expo's precompiled modules"
+            grep -E "error:" build.log | sort -u | head -10 | while IFS= read -r line; do echo "::warning title=source build error::${line:0:900}"; done
+            mv build.log build-source.log
+            (cd ios && EXPO_USE_PRECOMPILED_MODULES=1 EXPO_PRECOMPILED_FLAVOR=release pod install) > pods-precompiled.log 2>&1
+            grep -iE "precompiled|xcframework" pods-precompiled.log | head -20
+            rm -rf build
+            build; STATUS=$?
+            grep -E "BUILD (SUCCEEDED|FAILED)" build.log | tail -1
+          fi
           set -e
-          grep -E "BUILD (SUCCEEDED|FAILED)" build.log || true
           echo "xcodebuild exit status: $STATUS"
           exit $STATUS
 
       - name: Report iOS build errors
         if: failure()
         run: |
-          touch build.log
+          touch build.log build-source.log pods-precompiled.log
           grep -E "error:|xcodebuild: error" build.log | sort -u | head -10 | while IFS= read -r line; do
             echo "::error title=iOS build::${line:0:900}"
           done
-          tail -40 build.log | while IFS= read -r line; do
+          tail -25 build.log | while IFS= read -r line; do
             echo "::notice title=iOS log tail::${line:0:900}"
           done
           {
-            echo "### iOS build errors"
+            echo "### iOS build errors (last attempt)"
             echo '```'
             grep -E "error:|xcodebuild: error" build.log | sort -u | head -60
+            echo '```'
+            echo "### Source build errors (first attempt)"
+            echo '```'
+            grep -E "error:" build-source.log | sort -u | head -30
+            echo '```'
+            echo "### Precompiled pod install"
+            echo '```'
+            tail -40 pods-precompiled.log
             echo '```'
             echo "### Last 80 lines of the build log"
             echo '```'
