@@ -11,7 +11,8 @@ import { haptic } from '../lib/haptics';
 import { LessonResult, useStore } from '../state/store';
 import { C, ROW, ROW_EN } from '../theme';
 import { Card, Glass } from '../ui/Glass';
-import { Bar, Bob, Btn, E, Icon, IconBtn, SpeakBtn, T } from '../ui/kit';
+import { Laith } from '../ui/Laith';
+import { Bar, Btn, E, Icon, IconBtn, SpeakBtn, T } from '../ui/kit';
 import { Background, Confetti, Pop, Sheet, styles } from '../ui/parts';
 import { Answer, Arrange, Fill, LearnCard, Listen, Match, Meaning, Phase, Typing } from './exercises';
 
@@ -200,6 +201,9 @@ export function LessonScreen({ session, onExit }: { session: Session; onExit: ()
           </View>
         ) : (
           <Animated.View entering={SlideInDown.springify().damping(20).stiffness(220)} style={{ position: 'absolute', left: 0, right: 0, bottom: 0 }}>
+            <View style={{ position: 'absolute', left: 14, top: -70, zIndex: 2 }}>
+              <Laith size={92} mood={phase === 'correct' ? 'happy' : 'sad'} />
+            </View>
             <Glass radius={30} tint={phase === 'correct' ? C.green : C.red} intensity={85} depth={3} style={{ borderBottomLeftRadius: 0, borderBottomRightRadius: 0, paddingHorizontal: 20, paddingTop: 18, paddingBottom: Math.max(insets.bottom, 12) + 10, gap: 12 }}>
               <View style={{ flexDirection: ROW, alignItems: 'center', gap: 12 }}>
                 <Pop>
@@ -291,6 +295,7 @@ export function Complete({
   onExit,
   heading,
   note,
+  partner = isLesson,
 }: {
   result: LessonResult;
   seconds: number;
@@ -302,6 +307,8 @@ export function Complete({
   onExit: () => void;
   heading?: string;
   note?: string;
+  /** The lioness comes out to celebrate with Laith when a stage of the trail is finished. */
+  partner?: boolean;
 }) {
   const insets = useSafeAreaInsets();
   const perfect = accuracy === 100;
@@ -312,13 +319,16 @@ export function Complete({
       <Background tint={accent} />
       <View style={[styles.screen, { paddingTop: insets.top + 24, paddingHorizontal: 22, paddingBottom: Math.max(insets.bottom, 14) + 8 }]}>
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 14 }}>
-          <Bob distance={7}>
+          <View style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'center' }}>
+            {partner ? (
+              <Animated.View entering={ZoomIn.delay(650).springify().damping(11)} style={{ marginRight: -26 }}>
+                <Laith who="lioness" size={150} mood="cheer" flip />
+              </Animated.View>
+            ) : null}
             <Pop>
-              <View style={{ width: 132, height: 132, borderRadius: 66, backgroundColor: accent, alignItems: 'center', justifyContent: 'center', borderWidth: 6, borderColor: 'rgba(255,255,255,0.75)' }}>
-                <Icon name={perfect ? 'trophy' : 'check-decagram'} size={68} color={C.white} />
-              </View>
+              <Laith size={176} mood="cheer" />
             </Pop>
-          </Bob>
+          </View>
           {isLesson ? (
             <View style={{ flexDirection: ROW_EN, gap: 6 }}>
               {stars.map((n) => (

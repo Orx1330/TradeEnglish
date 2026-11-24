@@ -63,6 +63,7 @@ export function ScenarioScreen({ unit, onExit }: { unit: number; onExit: () => v
         accent={u.color}
         accentDark={u.dark}
         isLesson={false}
+        partner
         heading="صفقة موفّقة!"
         title={`مختبر الصفقات · ${u.title}`}
         note="جرّب الآن قول الردود الثلاثة بصوتك دون النظر إليها."

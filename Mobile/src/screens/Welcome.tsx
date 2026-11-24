@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { KeyboardAvoidingView, Platform, ScrollView, TextInput, View } from 'react-native';
+import { KeyboardAvoidingView, Platform, ScrollView, Switch, TextInput, View } from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { sfx } from '../lib/audio';
+import { REMINDERS_SUPPORTED, enableReminders } from '../lib/reminders';
 import { useStore } from '../state/store';
 import { C, F, ROW } from '../theme';
 import { Card } from '../ui/Glass';
-import { Bob, Btn, Chip, E, Icon, T } from '../ui/kit';
+import { Laith } from '../ui/Laith';
+import { Btn, Chip, E, Icon, T } from '../ui/kit';
 import { Background, Pop, styles } from '../ui/parts';
 
 const POINTS = [
@@ -18,7 +20,8 @@ const POINTS = [
 
 export function WelcomeScreen() {
   const insets = useSafeAreaInsets();
-  const { finishOnboarding } = useStore();
+  const { finishOnboarding, setSettings } = useStore();
+  const [remind, setRemind] = useState(REMINDERS_SUPPORTED);
   const [name, setName] = useState('');
   const [goal, setGoal] = useState(60);
   return (
@@ -26,14 +29,10 @@ export function WelcomeScreen() {
       <Background />
       <KeyboardAvoidingView style={styles.screen} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         <ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingTop: insets.top + 24, paddingHorizontal: 22, paddingBottom: 16, gap: 16 }} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>
-          <View style={{ alignItems: 'center', gap: 10 }}>
-            <Bob distance={6}>
-              <Pop>
-                <View style={{ width: 104, height: 104, borderRadius: 34, backgroundColor: C.green, alignItems: 'center', justifyContent: 'center', borderWidth: 5, borderColor: 'rgba(255,255,255,0.8)' }}>
-                  <Icon name="handshake" size={54} color={C.white} />
-                </View>
-              </Pop>
-            </Bob>
+          <View style={{ alignItems: 'center', gap: 6 }}>
+            <Pop>
+              <Laith mood="wave" size={148} />
+            </Pop>
             <E size={15} bold color={C.green} center style={{ letterSpacing: 3 }}>
               TRADE ENGLISH
             </E>
@@ -41,7 +40,7 @@ export function WelcomeScreen() {
               رحلة التاجر
             </T>
             <T size={16} color={C.sub} center>
-              إنجليزية تجارة الأغذية والحلويات، خطوة أقرب لصفقتك القادمة.
+              أهلًا! أنا ليث، وسأتعلّم معك إنجليزية تجارة الأغذية والحلويات خطوة بخطوة.
             </T>
           </View>
 
@@ -85,6 +84,15 @@ export function WelcomeScreen() {
               <Chip label="منتظم · 10 د" active={goal === 60} onPress={() => setGoal(60)} />
               <Chip label="جادّ · 20 د" active={goal === 120} onPress={() => setGoal(120)} />
             </View>
+            {REMINDERS_SUPPORTED ? (
+              <View style={{ flexDirection: ROW, alignItems: 'center', gap: 10, paddingTop: 4 }}>
+                <Icon name="bell-ring-outline" size={22} color={C.sub} />
+                <T size={15} w="medium" style={{ flex: 1 }}>
+                  ليث يذكّرني كل يوم الساعة 8 مساءً
+                </T>
+                <Switch value={remind} onValueChange={setRemind} trackColor={{ false: 'rgba(29,50,41,0.16)', true: C.green }} thumbColor={C.white} ios_backgroundColor="rgba(29,50,41,0.16)" />
+              </View>
+            ) : null}
           </Card>
 
         </ScrollView>
@@ -97,6 +105,8 @@ export function WelcomeScreen() {
             onPress={() => {
               sfx('start');
               finishOnboarding(name.trim(), goal);
+              // the permission prompt comes after the tap, so the learner knows why it is asked
+              if (remind) enableReminders().then((ok) => ok && setSettings({ reminder: true, reminderHour: 20 }));
             }}
           />
         </View>

@@ -7,6 +7,7 @@ import { NOUN, count } from '../lib/ar';
 import { caseUnlocked, dueIds, useStore } from '../state/store';
 import { C, ROW, ROW_EN } from '../theme';
 import { Card } from '../ui/Glass';
+import { LaithSays } from '../ui/Laith';
 import { Btn, E, Icon, Ring, SpeakBtn, T, Tap } from '../ui/kit';
 
 const BOXES = ['اليوم', 'يوم', '3 أيام', 'أسبوع', 'أسبوعان', 'شهر'];
@@ -26,10 +27,11 @@ export function ReviewScreen({ onStartReview, onStartCase }: { onStartReview: (i
         <T size={30} w="black">
           المراجعة الذكية
         </T>
-        <T size={15} color={C.sub}>
-          الجملة التي تخطئ فيها تعود اليوم، والتي تتقنها تتباعد حتى شهر.
-        </T>
       </View>
+      <LaithSays
+        mood={due.length ? 'idle' : learned.length ? 'happy' : 'wave'}
+        text={due.length ? `${count(due.length, NOUN.phrase)} تنتظرنا اليوم. الجملة التي نخطئ فيها تعود، والتي نتقنها تتباعد حتى شهر.` : learned.length ? 'أنجزنا مراجعة اليوم! يمكنك التدرّب بحرية متى شئت.' : 'أكمل أول درس معي، ثم نراجع هنا ما تعلّمناه.'}
+      />
 
       <Card radius={28} depth={2} style={{ padding: 18, gap: 16 }}>
         <View style={{ flexDirection: ROW, alignItems: 'center', gap: 16 }}>

@@ -49,6 +49,14 @@ export const usePlaying = (key: string) =>
     () => false
   );
 
+/** True while any sound is playing — Laith listens along. */
+export const useAnyPlaying = () =>
+  useSyncExternalStore(
+    subscribe,
+    () => nowKey !== null,
+    () => false
+  );
+
 export const setVoicePref = (voice: string) => {
   voicePref = voice;
   lastClip = '';

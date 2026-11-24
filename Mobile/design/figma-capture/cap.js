@@ -1,6 +1,6 @@
 // Capture tooling for turning live screens of the web preview into static HTML snapshots.
 (() => {
-  const PROPS = ['display','position','top','left','right','bottom','width','height','min-width','min-height','max-width','max-height','margin-top','margin-right','margin-bottom','margin-left','padding-top','padding-right','padding-bottom','padding-left','flex-direction','flex-wrap','flex-grow','flex-shrink','flex-basis','align-items','align-self','align-content','justify-content','row-gap','column-gap','border-top-width','border-right-width','border-bottom-width','border-left-width','border-top-style','border-right-style','border-bottom-style','border-left-style','border-top-color','border-right-color','border-bottom-color','border-left-color','border-top-left-radius','border-top-right-radius','border-bottom-left-radius','border-bottom-right-radius','background-color','background-image','color','font-family','font-size','font-weight','line-height','letter-spacing','text-align','direction','white-space','overflow-x','overflow-y','opacity','transform','box-shadow','z-index','text-overflow','backdrop-filter','box-sizing','unicode-bidi','overflow-wrap','text-decoration-line'];
+  const PROPS = ['display','position','top','left','right','bottom','width','height','min-width','min-height','max-width','max-height','margin-top','margin-right','margin-bottom','margin-left','padding-top','padding-right','padding-bottom','padding-left','flex-direction','flex-wrap','flex-grow','flex-shrink','flex-basis','align-items','align-self','align-content','justify-content','row-gap','column-gap','border-top-width','border-right-width','border-bottom-width','border-left-width','border-top-style','border-right-style','border-bottom-style','border-left-style','border-top-color','border-right-color','border-bottom-color','border-left-color','border-top-left-radius','border-top-right-radius','border-bottom-left-radius','border-bottom-right-radius','background-color','background-image','color','font-family','font-size','font-weight','line-height','letter-spacing','text-align','direction','white-space','overflow-x','overflow-y','opacity','transform','box-shadow','z-index','text-overflow','backdrop-filter','transform-origin','box-sizing','unicode-bidi','overflow-wrap','text-decoration-line'];
   const SKIP = new Set(['script','style','noscript','link','meta','title','head']);
   const SVGNS = 'http://www.w3.org/2000/svg';
 
@@ -32,7 +32,7 @@
     if (cs.display === 'none' || cs.visibility === 'hidden' || cs.opacity === '0') return null;
     // content scrolled far out of view: keep a spacer above (so offsets hold), drop what is below
     const rect = el.getBoundingClientRect();
-    if (rect.height > 0 && cs.position !== 'fixed') {
+    if (!window.__keepAll && rect.height > 0 && cs.position !== 'fixed') {
       if (rect.top > innerHeight + 260) return null;
       if (rect.bottom < -260) {
         const spacer = document.createElement('div');
@@ -64,9 +64,27 @@
     out.setAttribute('style', styleOf(cs, onlyText));
     const label = el.getAttribute('aria-label');
     if (label) out.setAttribute('data-name', label);
+    // A right-to-left row that wraps onto several lines is pinned child by child: importers
+    // disagree on the line order of `row-reverse` + `wrap`, and exact boxes leave nothing to guess.
+    const pin = cs.flexDirection === 'row-reverse' && cs.flexWrap === 'wrap' && new Set([...el.children].map((c) => c.offsetTop)).size > 1;
+    const box = pin ? el.getBoundingClientRect() : null;
     for (const c of el.childNodes) {
       const n = conv(c);
-      if (n) out.appendChild(n);
+      if (!n) continue;
+      out.appendChild(n);
+      if (pin && c.nodeType === 1) {
+        const r = c.getBoundingClientRect();
+        n.style.position = 'absolute';
+        n.style.left = r.left - box.left - parseFloat(cs.borderLeftWidth) + 'px';
+        n.style.top = r.top - box.top - parseFloat(cs.borderTopWidth) + 'px';
+        n.style.width = r.width + 'px';
+        n.style.height = r.height + 'px';
+        n.style.margin = '0';
+      }
+    }
+    if (pin) {
+      out.style.display = 'block';
+      out.style.height = box.height + 'px';
     }
     if (el.scrollTop > 0 && out.firstElementChild) out.firstElementChild.style.marginTop = -el.scrollTop + 'px';
     return out;

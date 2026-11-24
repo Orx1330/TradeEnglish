@@ -18,6 +18,9 @@ export type Settings = {
   typing: boolean;
   /** Play each new sentence automatically. */
   autoplay: boolean;
+  /** A daily local notification at reminderHour:00. */
+  reminder: boolean;
+  reminderHour: number;
 };
 export type LessonRecord = { stars: number; times: number };
 export type ReviewItem = { box: number; due: string };
@@ -51,7 +54,7 @@ const initial: State = {
   favorites: [],
   recordings: {},
   perfect: 0,
-  settings: { voice: 'random', haptics: true, sfx: true, goal: 60, typing: true, autoplay: true },
+  settings: { voice: 'random', haptics: true, sfx: true, goal: 60, typing: true, autoplay: true, reminder: false, reminderHour: 20 },
 };
 
 /* ---------- dates ---------- */

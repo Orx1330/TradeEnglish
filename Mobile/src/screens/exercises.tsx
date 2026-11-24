@@ -3,12 +3,13 @@ import { Platform, TextInput, View } from 'react-native';
 import Animated, { FadeIn, LinearTransition, ZoomIn } from 'react-native-reanimated';
 
 import { Phrase, lessonOf, tokens } from '../data/course';
-import { sfx, speak } from '../lib/audio';
+import { sfx, speak, useAnyPlaying } from '../lib/audio';
 import { Step, shuffle, tile } from '../lib/engine';
 import { haptic } from '../lib/haptics';
 import { useStore } from '../state/store';
 import { C, EN_FONT, ROW, ROW_EN } from '../theme';
 import { Card } from '../ui/Glass';
+import { Laith } from '../ui/Laith';
 import { Recorder } from '../ui/Recorder';
 import { E, Icon, SpeakBtn, T, Tap } from '../ui/kit';
 import { WordLine, useShake } from '../ui/parts';
@@ -96,6 +97,7 @@ const optionState = (id: string, correctId: string, answer: Answer, phase: Phase
 export function LearnCard({ p, accent }: { p: Phrase; accent: string }) {
   const { s, toggleFavorite } = useStore();
   const fav = s.favorites.includes(p.id);
+  const playing = useAnyPlaying();
   return (
     <View style={{ gap: 14 }}>
       <Card radius={28} depth={2} style={{ padding: 20, gap: 14 }}>
@@ -118,8 +120,9 @@ export function LearnCard({ p, accent }: { p: Phrase; accent: string }) {
           <SpeakBtn clip={p.id} text={p.en} size={58} color={accent} />
           <SpeakBtn clip={p.id} text={p.en} size={46} color={accent} slow />
           <T size={13} color={C.mute} style={{ flex: 1, lineHeight: 19 }}>
-            استمع ثم كرّر بصوت مسموع. اضغط أي كلمة لمعرفة معناها.
+            استمع ثم كرّر مع ليث. اضغط أي كلمة لمعرفة معناها.
           </T>
+          <Laith size={76} mood={playing ? 'listen' : 'idle'} style={{ marginVertical: -10 }} onZone={(zone) => zone === 'book' && speak(p.id)} />
         </View>
       </Card>
       <Recorder phraseId={p.id} />

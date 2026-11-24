@@ -1,12 +1,13 @@
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
-import { I18nManager, View } from 'react-native';
-import Animated, { FadeIn, SlideInDown, SlideOutDown, useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
+import { I18nManager, Pressable, View } from 'react-native';
+import Animated, { FadeIn, FadeInDown, FadeOut, SlideInDown, SlideOutDown, ZoomIn, useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { UNITS } from './src/data/course';
+import { LESSONS, UNITS } from './src/data/course';
 import { initAudio } from './src/lib/audio';
+import { cancelDaily, scheduleDaily } from './src/lib/reminders';
 import { LessonScreen, Session } from './src/screens/Lesson';
 import { PathScreen } from './src/screens/Path';
 import { PhrasebookScreen } from './src/screens/Phrasebook';
@@ -14,9 +15,10 @@ import { ProfileScreen } from './src/screens/Profile';
 import { ReviewScreen } from './src/screens/Review';
 import { ScenarioScreen } from './src/screens/Scenario';
 import { WelcomeScreen } from './src/screens/Welcome';
-import { StoreProvider, currentLesson, dueIds, useStore } from './src/state/store';
+import { StoreProvider, currentLesson, dueIds, isDone, streak, useStore } from './src/state/store';
 import { C, FONT_FILES, MAX_W, ROW } from './src/theme';
 import { Glass } from './src/ui/Glass';
+import { Bubble, Laith, laithLine } from './src/ui/Laith';
 import { Icon, T, Tap, fill } from './src/ui/kit';
 import { Background, styles } from './src/ui/parts';
 
@@ -62,12 +64,80 @@ function TabItem({ tab, active, badge, onPress }: { tab: (typeof TABS)[number]; 
   );
 }
 
+/**
+ * Laith runs out to say hello each time the app opens: a greeting for the time of day, and what
+ * the two of them are doing next. It leaves on its own after a moment, or at once on a tap.
+ */
+function Greeting({ onDone }: { onDone: () => void }) {
+  const insets = useSafeAreaInsets();
+  const { s } = useStore();
+  const [reply, setReply] = useState<string | null>(null);
+  const next = LESSONS[currentLesson(s)];
+  const days = streak(s);
+  const hello = new Date().getHours() < 12 ? 'صباح الخير' : 'مساء الخير';
+  const plan = isDone(s, next.id) ? 'أنهينا كل الدروس! هيا نراجع ما تعلّمناه.' : Object.keys(s.done).length ? `درسنا التالي: «${next.title}». هيا نكمل!` : `سنبدأ بدرس «${next.title}». أنا متحمّس!`;
+
+  // stay a little longer if he was touched, so the reaction can be read
+  useEffect(() => {
+    const t = setTimeout(onDone, reply ? 2600 : 3200);
+    return () => clearTimeout(t);
+  }, [reply, onDone]);
+
+  return (
+    <Animated.View exiting={FadeOut.duration(260)} style={[fill, { backgroundColor: C.bg }]}>
+      <Background tint="#F2B33D" />
+      <Pressable style={[styles.screen, { alignItems: 'center', justifyContent: 'center', paddingHorizontal: 28, paddingTop: insets.top, paddingBottom: insets.bottom }]} onPress={onDone} accessibilityLabel="متابعة">
+        <Animated.View entering={FadeInDown.delay(520).duration(320)} style={{ alignSelf: 'stretch', marginBottom: 6 }}>
+          <Bubble style={{ alignSelf: 'center', paddingHorizontal: 20, paddingVertical: 14, borderRadius: 24 }}>{reply ?? `${hello}${s.name ? `، ${s.name}` : ''}! ${plan}`}</Bubble>
+          <View style={{ alignSelf: 'center', width: 16, height: 16, backgroundColor: C.white, transform: [{ rotate: '45deg' }], marginTop: -9, borderBottomWidth: 1.5, borderRightWidth: 1.5, borderColor: 'rgba(217,129,42,0.35)' }} />
+        </Animated.View>
+        <Animated.View entering={ZoomIn.springify().damping(10).stiffness(140)}>
+          <Laith size={230} mood="wave" onZone={(zone) => setReply(laithLine(zone))} />
+        </Animated.View>
+        {days > 1 ? (
+          <Animated.View entering={FadeIn.delay(900)} style={{ flexDirection: ROW, alignItems: 'center', gap: 6, marginTop: 10 }}>
+            <Icon name="fire" size={22} color="#F0802F" />
+            <T size={15} w="bold" color={C.sub}>
+              {days} أيام متتالية
+            </T>
+          </Animated.View>
+        ) : null}
+      </Pressable>
+    </Animated.View>
+  );
+}
+
 function Shell() {
   const insets = useSafeAreaInsets();
   const { s, ready } = useStore();
   const [tab, setTab] = useState<Tab>('path');
   const [overlay, setOverlay] = useState<Overlay>(null);
   const [n, setN] = useState(0);
+  // Greet returning learners on launch. A first-time learner has just met Laith on the welcome screen.
+  const [greeting, setGreeting] = useState<boolean | null>(null);
+  useEffect(() => {
+    if (ready && greeting === null) setGreeting(s.onboarded);
+  }, [ready, greeting, s.onboarded]);
+  const endGreeting = React.useCallback(() => setGreeting(false), []);
+
+  // Rewrite tomorrow's reminder whenever progress or the chosen hour changes, so it always names
+  // the lesson that is really next and the current streak.
+  const nextTitle = LESSONS[currentLesson(s)].title;
+  const days = streak(s);
+  const allDone = isDone(s, LESSONS.length - 1);
+  useEffect(() => {
+    if (!ready) return;
+    if (!s.settings.reminder) {
+      cancelDaily();
+      return;
+    }
+    const body = allDone
+      ? 'أنهينا كل الدروس! خمس دقائق من المراجعة تحفظ ما تعلّمناه.'
+      : days > 1
+        ? `سلسلتك ${days} أيام، لا تقطعها! درسنا التالي: «${nextTitle}».`
+        : `درسنا التالي: «${nextTitle}». خمس دقائق معي تكفي.`;
+    scheduleDaily(s.settings.reminderHour, 0, { title: 'ليث ينتظرك 🦁', body });
+  }, [ready, s.settings.reminder, s.settings.reminderHour, nextTitle, days, allDone]);
 
   if (!ready) return <Background />;
   if (!s.onboarded) return <WelcomeScreen />;
@@ -88,7 +158,7 @@ function Shell() {
       {/* tabs stay mounted so the trail keeps its scroll position while a lesson is open */}
       <View style={[styles.screen, { display: overlay ? 'none' : 'flex' }]}>
         <View style={{ flex: 1, display: tab === 'path' ? 'flex' : 'none' }}>
-          <PathScreen onStartLesson={startLesson} onStartCase={startCase} />
+          <PathScreen onStartLesson={startLesson} onStartCase={startCase} active={!overlay && !greeting && tab === 'path'} />
         </View>
         {tab === 'review' ? (
           <Animated.View entering={FadeIn.duration(180)} style={{ flex: 1 }}>
@@ -120,6 +190,8 @@ function Shell() {
           {overlay.kind === 'session' ? <LessonScreen session={overlay.session} onExit={() => setOverlay(null)} /> : <ScenarioScreen unit={overlay.unit} onExit={() => setOverlay(null)} />}
         </Animated.View>
       ) : null}
+
+      {greeting ? <Greeting onDone={endGreeting} /> : null}
     </View>
   );
 }

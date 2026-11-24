@@ -1,7 +1,7 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { I18nManager, Pressable, ScrollView, View, useWindowDimensions } from 'react-native';
-import Animated, { Easing, useAnimatedStyle, useSharedValue, withRepeat, withSpring, withTiming } from 'react-native-reanimated';
+import Animated, { Easing, useAnimatedStyle, useSharedValue, withDelay, withRepeat, withSpring, withTiming } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path as SvgPath } from 'react-native-svg';
 
@@ -11,6 +11,7 @@ import { haptic } from '../lib/haptics';
 import { State, caseUnlocked, currentLesson, isDone, isUnlocked, streak, todayXp, unitDoneCount, useStore } from '../state/store';
 import { C, MAX_W, ROW, ROW_EN, shadow } from '../theme';
 import { Card, Glass } from '../ui/Glass';
+import { Laith } from '../ui/Laith';
 import { Bar, Bob, Btn, E, Icon, Ring, SpeakBtn, T, Tap } from '../ui/kit';
 import { Sheet } from '../ui/parts';
 
@@ -226,6 +227,61 @@ const UnitTrail = React.memo(function UnitTrail({
   );
 });
 
+/* ---------- Laith on the trail ---------- */
+const CUB = 78;
+/** Where Laith stands for a lesson: on the tight side of its node, feet level with the node's base. */
+function standBy(lessonId: number, width: number) {
+  const lesson = LESSONS[lessonId];
+  const k = lessonId % LESSONS_PER_UNIT;
+  const cx = width / 2 + sway(lesson.unit * NODES_PER_UNIT + k);
+  const cy = lesson.unit * UNIT_H + HEADER_H + TRAIL_TOP + k * ROW_H + ROW_H / 2;
+  const onRight = cx > width / 2;
+  return { x: onRight ? cx + NODE / 2 - 8 : cx - NODE / 2 + 8 - CUB, y: cy + NODE / 2 + 8 - CUB, flip: !onRight };
+}
+
+/**
+ * Laith waits beside the lesson the learner should open next. When a lesson is finished he
+ * bounds along the trail to the new one, then settles into his eager little waiting hops.
+ */
+function TrailCompanion({ current, done, width, top, active, onOpen }: { current: number; done: boolean; width: number; top: number; active: boolean; onOpen: () => void }) {
+  const spot = standBy(current, width);
+  const x = useSharedValue(spot.x);
+  const y = useSharedValue(spot.y);
+  const from = useRef(current);
+  const [moving, setMoving] = useState(false);
+
+  useEffect(() => {
+    if (!active) return; // wait until the trail is on screen, so the walk is actually seen
+    if (from.current === current) {
+      x.value = spot.x;
+      y.value = spot.y;
+      return;
+    }
+    from.current = current;
+    setMoving(true);
+    const walk = { duration: 1100, easing: Easing.inOut(Easing.quad) };
+    x.value = withDelay(450, withTiming(spot.x, walk));
+    y.value = withDelay(450, withTiming(spot.y, walk));
+    const t = setTimeout(() => setMoving(false), 1700);
+    return () => clearTimeout(t);
+  }, [active, current, spot.x, spot.y, x, y]);
+
+  const place = useAnimatedStyle(() => ({ transform: [{ translateX: x.value }, { translateY: y.value }] }));
+  return (
+    <Animated.View style={[{ position: 'absolute', left: 0, top, width: CUB, height: CUB }, place]}>
+      <Laith
+        size={CUB}
+        flip={spot.flip}
+        mood={moving ? 'cheer' : done ? 'idle' : 'wait'}
+        onZone={(zone) => {
+          // a pat on the head is "let's go": it opens the lesson he is waiting at
+          if (zone === 'head') setTimeout(onOpen, 380);
+        }}
+      />
+    </Animated.View>
+  );
+}
+
 /* ---------- lesson preview sheet ---------- */
 function LessonPreview({ lesson, s, onStart }: { lesson: Lesson; s: State; onStart: () => void }) {
   const unit = UNITS[lesson.unit];
@@ -332,7 +388,7 @@ function Stat({ icon, color, value }: { icon: string; color: string; value: numb
   );
 }
 
-export function PathScreen({ onStartLesson, onStartCase }: { onStartLesson: (lessonId: number) => void; onStartCase: (unit: number) => void }) {
+export function PathScreen({ onStartLesson, onStartCase, active }: { onStartLesson: (lessonId: number) => void; onStartCase: (unit: number) => void; active: boolean }) {
   const insets = useSafeAreaInsets();
   const { width: winW, height: winH } = useWindowDimensions();
   const width = Math.min(winW, MAX_W);
@@ -357,6 +413,16 @@ export function PathScreen({ onStartLesson, onStartCase }: { onStartLesson: (les
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Coming back from a finished lesson: follow Laith to the next one.
+  const seen = useRef(current);
+  useEffect(() => {
+    if (!active || seen.current === current) return;
+    seen.current = current;
+    const t = setTimeout(() => jump(true), 250);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [active, current]);
+
   const units = useMemo(() => UNITS, []);
   return (
     <View style={{ flex: 1 }}>
@@ -364,6 +430,7 @@ export function PathScreen({ onStartLesson, onStartCase }: { onStartLesson: (les
         {units.map((u) => (
           <UnitTrail key={u.id} unit={u} s={s} width={width} current={current} onLesson={setPreview} onCase={(unit) => (caseUnlocked(s, unit) ? onStartCase(unit) : setLockedCase(unit))} />
         ))}
+        <TrailCompanion current={current} done={isDone(s, current)} width={width} top={top} active={active} onOpen={() => setPreview(LESSONS[current])} />
         <View style={{ alignItems: 'center', gap: 6, paddingTop: 4 }}>
           <Icon name="flag-checkered" size={34} color={C.mute} />
           <T size={14} color={C.mute} center>

@@ -7,12 +7,19 @@ import { speak } from '../lib/audio';
 import { NOUN, count } from '../lib/ar';
 import { haptic } from '../lib/haptics';
 import { PERSISTENT, recordingsSize } from '../lib/recStore';
+import { REMINDERS_SUPPORTED, cancelDaily, enableReminders } from '../lib/reminders';
 import { addDays, badges, dayKey, masteredCount, streak, unitDoneCount, useStore } from '../state/store';
 import { C, ROW, ROW_EN } from '../theme';
 import { Card } from '../ui/Glass';
 import { Bar, Btn, Chip, E, Icon, T } from '../ui/kit';
 import { Sheet } from '../ui/parts';
 
+export const REMINDER_HOURS = [
+  { hour: 9, label: '9 صباحًا' },
+  { hour: 13, label: '1 ظهرًا' },
+  { hour: 20, label: '8 مساءً' },
+  { hour: 22, label: '10 ليلًا' },
+];
 const DAYS = ['أحد', 'اثنين', 'ثلاثاء', 'أربعاء', 'خميس', 'جمعة', 'سبت'];
 const rank = (xp: number) => (xp < 200 ? 'تاجر ناشئ' : xp < 800 ? 'مشترٍ واثق' : xp < 1800 ? 'مفاوض ماهر' : 'خبير توريد');
 const mb = (bytes: number) => (bytes < 1024 * 1024 ? `${Math.max(1, Math.round(bytes / 1024))} ك.ب` : `${(bytes / 1024 / 1024).toFixed(1)} م.ب`);
@@ -65,6 +72,7 @@ export function ProfileScreen() {
   const insets = useSafeAreaInsets();
   const { s, setSettings, resetProgress } = useStore();
   const [confirm, setConfirm] = useState(false);
+  const [reminderNote, setReminderNote] = useState<string | null>(null);
   const lessonsDone = Object.keys(s.done).length;
   const recs = Object.keys(s.recordings).length;
   const size = useMemo(() => {
@@ -222,6 +230,37 @@ export function ProfileScreen() {
         <Toggle icon="play-circle-outline" title="تشغيل الجملة تلقائيًا" hint="تُقرأ كل جملة جديدة فور ظهورها" value={s.settings.autoplay} onChange={(autoplay) => setSettings({ autoplay })} />
         <View style={{ height: 1, backgroundColor: C.line }} />
         <Toggle icon="keyboard-outline" title="تمارين الكتابة" hint="اكتب الجملة والإملاء السمعي في نهاية الدرس" value={s.settings.typing} onChange={(typing) => setSettings({ typing })} />
+      </Card>
+
+      <Card radius={26} style={{ paddingHorizontal: 18, paddingVertical: 10, gap: 6 }}>
+        <Toggle
+          icon="bell-ring-outline"
+          title="التذكير اليومي"
+          hint={REMINDERS_SUPPORTED ? 'ليث يذكّرك بدرسك كل يوم في الوقت الذي تختاره' : 'متاح في تطبيق الهاتف'}
+          value={s.settings.reminder}
+          onChange={async (on) => {
+            setReminderNote(null);
+            if (!on) {
+              setSettings({ reminder: false });
+              cancelDaily();
+              return;
+            }
+            if (await enableReminders()) setSettings({ reminder: true });
+            else setReminderNote(REMINDERS_SUPPORTED ? 'اسمح للتطبيق بالإشعارات من إعدادات الجهاز ثم أعد المحاولة.' : 'التذكير يعمل في تطبيق الهاتف فقط.');
+          }}
+        />
+        {s.settings.reminder ? (
+          <View style={{ flexDirection: ROW, flexWrap: 'wrap', gap: 8, paddingBottom: 8 }}>
+            {REMINDER_HOURS.map((r) => (
+              <Chip key={r.hour} label={r.label} icon="clock-outline" active={s.settings.reminderHour === r.hour} onPress={() => setSettings({ reminderHour: r.hour })} />
+            ))}
+          </View>
+        ) : null}
+        {reminderNote ? (
+          <T size={13} color={C.redDark} style={{ paddingBottom: 8 }}>
+            {reminderNote}
+          </T>
+        ) : null}
       </Card>
 
       <Card radius={26} style={{ padding: 18, gap: 10 }}>
