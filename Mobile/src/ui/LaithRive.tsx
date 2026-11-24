@@ -81,19 +81,26 @@ function NativeLaith({ mood, size, who, flip, fire, onReady, onFail, rive }: Riv
 
   useEffect(() => {
     if (!riveViewRef) return;
-    try {
-      riveViewRef.setNumberInputValue('mood', MOODS.indexOf(mood));
-    } catch {
-      // a missing input only means the mood does not change; nothing to recover
-    }
+    const apply = () => {
+      try {
+        riveViewRef.setNumberInputValue('mood', MOODS.indexOf(mood));
+      } catch (e) {
+        console.warn('[Laith] mood input failed:', e);
+      }
+    };
+    apply();
+    // the native view can rebuild its state machine right after it reports ready (a reload when its
+    // surface arrives), which would drop the value set above; set it again once things settle
+    const timers = [setTimeout(apply, 400), setTimeout(apply, 1500)];
     fire.current = (zone) => {
       try {
         riveViewRef.triggerInput(TRIGGER[zone]);
-      } catch {
-        // same as above
+      } catch (e) {
+        console.warn('[Laith] trigger failed:', zone, e);
       }
     };
     return () => {
+      timers.forEach(clearTimeout);
       fire.current = null;
     };
   }, [mood, riveViewRef, fire]);

@@ -45,7 +45,8 @@
         {
           "color": "#3FAE5A"
         }
-      ]
+      ],
+      "./plugins/withRiveLegacy"
     ]
   }
 }
