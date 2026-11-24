@@ -45,7 +45,7 @@ function TabItem({ tab, active, badge, onPress }: { tab: (typeof TABS)[number]; 
   return (
     <Tap onPress={onPress} scale={0.9} sound outer={{ flex: 1 }} label={tab.label} hitSlop={0}>
       <View style={{ height: 58, alignItems: 'center', justifyContent: 'center' }}>
-        <Animated.View style={[{ position: 'absolute', top: 5, bottom: 5, left: 4, right: 4, borderRadius: 22, backgroundColor: 'rgba(63,174,90,0.16)' }, pill]} />
+        <Animated.View style={[{ position: 'absolute', top: 5, bottom: 5, left: 4, right: 4, borderRadius: 22, backgroundColor: 'rgba(88,204,2,0.18)' }, pill]} />
         <Animated.View style={[{ alignItems: 'center' }, lift]}>
           <Icon name={active ? tab.on : tab.icon} size={25} color={active ? C.greenDark : C.sub} />
           <T size={11.5} w={active ? 'bold' : 'medium'} color={active ? C.greenDark : C.sub} center style={{ lineHeight: 16 }}>
@@ -85,7 +85,7 @@ function Greeting({ onDone }: { onDone: () => void }) {
 
   return (
     <Animated.View exiting={FadeOut.duration(260)} style={[fill, { backgroundColor: C.bg }]}>
-      <Background tint="#F2B33D" />
+      <Background tint="#FFC800" />
       <Pressable style={[styles.screen, { alignItems: 'center', justifyContent: 'center', paddingHorizontal: 28, paddingTop: insets.top, paddingBottom: insets.bottom }]} onPress={onDone} accessibilityLabel="متابعة">
         <Animated.View entering={FadeInDown.delay(520).duration(320)} style={{ alignSelf: 'stretch', marginBottom: 6 }}>
           <Bubble style={{ alignSelf: 'center', paddingHorizontal: 20, paddingVertical: 14, borderRadius: 24 }}>{reply ?? `${hello}${s.name ? `، ${s.name}` : ''}! ${plan}`}</Bubble>

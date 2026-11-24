@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { FlatList, Platform, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { LESSONS, PHRASES, Phrase, UNITS, VOICES, lessonOf } from '../data/course';
-import { voicesFor } from '../lib/audio';
+import { voicesFor, warmUp } from '../lib/audio';
 import { isUnlocked, useStore } from '../state/store';
 import { C, F, RIGHT, ROW, ROW_EN } from '../theme';
 import { Card } from '../ui/Glass';
@@ -16,6 +16,7 @@ type Filter = 'all' | 'fav' | 'rec';
 /* ---------- one sentence in detail ---------- */
 function PhraseDetail({ p }: { p: Phrase }) {
   const { s, toggleFavorite } = useStore();
+  useEffect(() => warmUp([p.id]), [p.id]);
   const lesson = lessonOf(p.id);
   const unit = UNITS[lesson.unit];
   const fav = s.favorites.includes(p.id);

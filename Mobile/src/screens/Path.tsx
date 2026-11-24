@@ -6,7 +6,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Path as SvgPath } from 'react-native-svg';
 
 import { LESSONS, LESSONS_PER_UNIT, Lesson, UNITS, Unit, unitLessons } from '../data/course';
-import { sfx } from '../lib/audio';
+import { sfx, warmUp } from '../lib/audio';
 import { haptic } from '../lib/haptics';
 import { State, caseUnlocked, currentLesson, isDone, isUnlocked, streak, todayXp, unitDoneCount, useStore } from '../state/store';
 import { C, MAX_W, ROW, ROW_EN, shadow } from '../theme';
@@ -284,6 +284,7 @@ function TrailCompanion({ current, done, width, top, active, onOpen }: { current
 
 /* ---------- lesson preview sheet ---------- */
 function LessonPreview({ lesson, s, onStart }: { lesson: Lesson; s: State; onStart: () => void }) {
+  useEffect(() => warmUp(lesson.phrases.map((p) => p.id)), [lesson]);
   const unit = UNITS[lesson.unit];
   const done = isDone(s, lesson.id);
   const open = isUnlocked(s, lesson.id);

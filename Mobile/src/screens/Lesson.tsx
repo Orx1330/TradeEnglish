@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { LESSONS, UNITS, normal, tokens } from '../data/course';
 import { NOUN, count } from '../lib/ar';
-import { sfx, speak, stopAudio } from '../lib/audio';
+import { sfx, speak, stopAudio, warmUp } from '../lib/audio';
 import { KIND_LABEL, Step, again, judgeTiles, judgeTyped, lessonSession, reviewSession, tile } from '../lib/engine';
 import { haptic } from '../lib/haptics';
 import { LessonResult, useStore } from '../state/store';
@@ -31,6 +31,11 @@ export function LessonScreen({ session, onExit }: { session: Session; onExit: ()
   const [steps, setSteps] = useState<Step[]>(() =>
     session.type === 'lesson' ? lessonSession(LESSONS[session.lessonId], s.settings.typing) : reviewSession(session.ids, s.settings.typing)
   );
+  // prepare every sentence of the session up front, so each listen button plays at once
+  useEffect(() => {
+    warmUp([...new Set(steps.flatMap((st) => (st.kind === 'match' ? st.pairs.map((x) => x.id) : [st.p.id])))]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [i, setI] = useState(0);
   const [answer, setAnswer] = useState<Answer>(null);
   const [phase, setPhase] = useState<Phase>('answering');

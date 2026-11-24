@@ -39,8 +39,8 @@ function Orb({ color, size, x, y, drift, delay }: { color: string; size: number;
       <Svg width={size} height={size}>
         <Defs>
           <RadialGradient id={id} cx="50%" cy="50%" r="50%">
-            <Stop offset="0" stopColor={color} stopOpacity={0.55} />
-            <Stop offset="0.55" stopColor={color} stopOpacity={0.2} />
+            <Stop offset="0" stopColor={color} stopOpacity={0.7} />
+            <Stop offset="0.55" stopColor={color} stopOpacity={0.28} />
             <Stop offset="1" stopColor={color} stopOpacity={0} />
           </RadialGradient>
         </Defs>
@@ -60,8 +60,8 @@ export function Background({ tint = C.green }: { tint?: string }) {
   return (
     <View pointerEvents="none" style={[fill, { backgroundColor: C.bg, overflow: 'hidden' }]}>
       <Orb color={tint} size={w * 1.15} x={w * 0.82} y={height * 0.1} drift={46} delay={0} />
-      <Orb color="#F2B33D" size={w * 0.95} x={w * 0.08} y={height * 0.46} drift={56} delay={900} />
-      <Orb color="#59B7D9" size={w * 1.05} x={w * 0.78} y={height * 0.88} drift={50} delay={1700} />
+      <Orb color="#FFC800" size={w * 0.95} x={w * 0.08} y={height * 0.46} drift={56} delay={900} />
+      <Orb color="#1CB0F6" size={w * 1.05} x={w * 0.78} y={height * 0.88} drift={50} delay={1700} />
     </View>
   );
 }
@@ -127,7 +127,7 @@ export function Sheet({
 }
 
 /* ---------- confetti ---------- */
-const CONFETTI = ['#3FAE5A', '#F2B33D', '#2E9BC4', '#D96C86', '#8571C9', '#FFFFFF'];
+const CONFETTI = ['#58CC02', '#FFC800', '#1CB0F6', '#FF5FA8', '#CE82FF', '#FF9600'];
 function Piece({ i, width, height }: { i: number; width: number; height: number }) {
   const seed = useMemo(() => ({ x: Math.random() * width, drift: (Math.random() - 0.5) * 160, dur: 1800 + Math.random() * 1600, delay: Math.random() * 500, size: 7 + Math.random() * 7, spin: 360 + Math.random() * 720 }), [width]);
   const t = useSharedValue(0);

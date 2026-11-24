@@ -68,7 +68,7 @@ export function ReviewScreen({ onStartReview, onStartCase }: { onStartReview: (i
               <E size={13} bold color={n ? C.ink : C.mute} center>
                 {n}
               </E>
-              <View style={{ width: '100%', height: 8 + (n / peak) * 66, borderRadius: 10, backgroundColor: n ? ['#E2604F', '#F0802F', '#F2B33D', '#8CC152', '#3FAE5A', '#27A397'][box] : 'rgba(29,50,41,0.08)' }} />
+              <View style={{ width: '100%', height: 8 + (n / peak) * 66, borderRadius: 10, backgroundColor: n ? ['#FF4B4B', '#FF9600', '#FFC800', '#8EE000', '#58CC02', '#00CD9C'][box] : 'rgba(29,50,41,0.08)' }} />
               <T size={11} color={C.sub} center style={{ lineHeight: 15 }}>
                 {BOXES[box]}
               </T>

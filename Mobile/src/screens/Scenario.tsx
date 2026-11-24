@@ -4,7 +4,7 @@ import Animated, { FadeIn, FadeInDown, SlideInDown } from 'react-native-reanimat
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { UNITS, unitScenarios } from '../data/course';
-import { sfx, speak, stopAudio } from '../lib/audio';
+import { sfx, speak, stopAudio, warmUp } from '../lib/audio';
 import { shuffle } from '../lib/engine';
 import { haptic } from '../lib/haptics';
 import { LessonResult, useStore } from '../state/store';
@@ -24,6 +24,7 @@ export function ScenarioScreen({ unit, onExit }: { unit: number; onExit: () => v
   const { s, completeCase } = useStore();
   const u = UNITS[unit];
   const cases = useMemo(() => unitScenarios(unit), [unit]);
+  useEffect(() => warmUp(cases.map((c) => c.id)), [cases]);
   const [i, setI] = useState(0);
   const [solved, setSolved] = useState(false);
   const [tried, setTried] = useState<number[]>([]);

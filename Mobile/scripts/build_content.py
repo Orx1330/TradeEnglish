@@ -29,15 +29,15 @@ VOICES = [
 ]
 
 # Presentation data added on top of the original course (unit order = file order).
-UNIT_META = [
-    dict(level="A1", levelAr="مبتدئ", icon="account-voice", color="#3FAE5A", dark="#2C8743", soft="#DDF3E0"),
-    dict(level="A2", levelAr="أساسي", icon="candy-outline", color="#8571C9", dark="#6352A8", soft="#E8E2F8"),
-    dict(level="A2", levelAr="أساسي", icon="cart-outline", color="#2E9BC4", dark="#1F789B", soft="#D9EEF7"),
-    dict(level="A2+", levelAr="أساسي متقدم", icon="truck-fast-outline", color="#DB9A2E", dark="#B0781A", soft="#FAECD0"),
-    dict(level="B1", levelAr="متوسط", icon="handshake-outline", color="#D96C86", dark="#B34C66", soft="#FADFE6"),
-    dict(level="B1", levelAr="متوسط", icon="chess-knight", color="#526DB2", dark="#3B538F", soft="#DEE5F6"),
-    dict(level="B1+", levelAr="فوق المتوسط", icon="food-apple-outline", color="#27A397", dark="#197E74", soft="#D5F1EE"),
-    dict(level="B2", levelAr="متقدم", icon="crown-outline", color="#C9674A", dark="#A04C33", soft="#F8E0D8"),
+UNIT_META = [  # bright, saturated colours: each unit is easy to tell apart at a glance
+    dict(level="A1", levelAr="مبتدئ", icon="account-voice", color="#58CC02", dark="#46A302", soft="#D7FFB8"),
+    dict(level="A2", levelAr="أساسي", icon="candy-outline", color="#CE82FF", dark="#A560D8", soft="#F4E6FF"),
+    dict(level="A2", levelAr="أساسي", icon="cart-outline", color="#1CB0F6", dark="#1493D0", soft="#DDF4FF"),
+    dict(level="A2+", levelAr="أساسي متقدم", icon="truck-fast-outline", color="#FF9600", dark="#D97F00", soft="#FFEBCC"),
+    dict(level="B1", levelAr="متوسط", icon="handshake-outline", color="#FF5FA8", dark="#D9408A", soft="#FFE1EF"),
+    dict(level="B1", levelAr="متوسط", icon="chess-knight", color="#6C63FF", dark="#4F46D9", soft="#E5E3FF"),
+    dict(level="B1+", levelAr="فوق المتوسط", icon="food-apple-outline", color="#00CD9C", dark="#00A37C", soft="#CCF7EC"),
+    dict(level="B2", levelAr="متقدم", icon="crown-outline", color="#FF4B4B", dark="#D93636", soft="#FFDFE0"),
 ]
 LESSON_ICONS = [
     "hand-wave", "phone-in-talk", "currency-usd", "calendar-clock", "comment-question", "storefront",
