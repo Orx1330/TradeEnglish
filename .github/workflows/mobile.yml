@@ -20,8 +20,8 @@ concurrency:
 jobs:
   ios:
     name: iOS (IPA)
-    # Expo SDK 58 needs Xcode 27 (Swift 6.4); Xcode 26 fails to compile expo-modules-jsi.
-    # macos-26 images carry Xcode 27, macos-15 images stop at Xcode 26.x.
+    # macos-26 carries the newest Xcode 26.x releases (26.6 at the time of writing). Xcode 26.3
+    # on macos-15 failed to compile expo-modules-jsi ("sending 'slot' risks causing data races").
     runs-on: macos-26
     timeout-minutes: 75
     defaults:
@@ -45,8 +45,7 @@ jobs:
           XCODE=$(ls -d /Applications/Xcode_*.app 2>/dev/null | grep -viE "beta|release_candidate|_rc" | sort -V | tail -1)
           if [ -n "$XCODE" ]; then sudo xcode-select -s "$XCODE/Contents/Developer"; fi
           xcodebuild -version
-          MAJOR=$(xcodebuild -version | head -1 | sed -E 's/Xcode ([0-9]+).*/\1/')
-          if [ "$MAJOR" -lt 27 ]; then echo "::error title=Xcode::Expo SDK 58 needs Xcode 27 or newer, this runner has Xcode $MAJOR"; exit 1; fi
+          echo "Using $(xcodebuild -version | head -1)"
           xcodebuild -showsdks | grep -i iphoneos
 
       - name: Install packages
