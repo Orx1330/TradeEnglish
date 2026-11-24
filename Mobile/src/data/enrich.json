@@ -1,0 +1,1636 @@
+{
+  "glossary": {
+    "a": "أداة نكرة (للمفرد)",
+    "about": "عن / بشأن",
+    "above": "أعلى من",
+    "accept": "يقبل",
+    "acceptable": "مقبول",
+    "across": "على مدى / عبر",
+    "action": "إجراء / مهمة",
+    "added": "مضاف",
+    "additional": "إضافي",
+    "address": "عنوان / يعالج",
+    "affected": "متأثر",
+    "affecting": "يؤثر على",
+    "after": "بعد",
+    "again": "مرة أخرى",
+    "agree": "يتفق / يوافق",
+    "agreed": "اتفقنا / متفق عليه",
+    "agreement": "اتفاقية / اتفاق",
+    "all": "كل / جميع",
+    "allergen": "مسبب للحساسية",
+    "already": "بالفعل / مسبقًا",
+    "also": "أيضًا",
+    "alternatives": "بدائل",
+    "always": "دائمًا",
+    "am": "أكون (مع «أنا»)",
+    "amount": "مبلغ",
+    "an": "أداة نكرة (قبل صوت متحرك)",
+    "and": "و",
+    "any": "أي",
+    "anything": "أي شيء",
+    "applies": "ينطبق / يسري",
+    "apply": "ينطبق / يسري",
+    "appreciate": "يقدّر",
+    "approval": "موافقة / اعتماد",
+    "approve": "يوافق على / يعتمد",
+    "approved": "معتمد / تم اعتماده",
+    "approving": "الموافقة على",
+    "apricots": "مشمش",
+    "arabic": "عربي / العربية",
+    "are": "تكون / يكونون",
+    "arrange": "يرتّب / ينظّم",
+    "arrangement": "ترتيب / اتفاق",
+    "arrival": "وصول",
+    "arrive": "يصل",
+    "arrived": "وصل / وصلت",
+    "artwork": "التصميم الفني (للعبوة)",
+    "as": "كـ / بوصفه",
+    "assume": "يفترض",
+    "at": "في / عند",
+    "attached": "مرفق / أرفقنا",
+    "available": "متاح / متوفر",
+    "away": "بعيدًا (عن)",
+    "back": "رجوعًا / إلى الخلف",
+    "backup": "بديل / احتياطي",
+    "balance": "الرصيد / المبلغ المتبقي",
+    "bank": "بنك / بنكي",
+    "based": "مقرّه (في) / بناءً (على)",
+    "batch": "تشغيلة / دفعة",
+    "be": "يكون",
+    "beautiful": "جميل",
+    "before": "قبل",
+    "best": "الأفضل / الأكثر",
+    "best-selling": "الأكثر مبيعًا",
+    "better": "أفضل",
+    "beyond": "يتجاوز / أبعد من",
+    "biscuits": "بسكويت",
+    "both": "كلا / كلاهما",
+    "box": "علبة / صندوق",
+    "boxes": "علب",
+    "brand": "علامة تجارية",
+    "break": "يفصّل / يقسّم إلى بنود",
+    "budget": "ميزانية",
+    "building": "بناء",
+    "bulk": "بالجملة / بكميات كبيرة",
+    "but": "لكن",
+    "butter": "زبدة",
+    "buyer": "مشترٍ",
+    "by": "بـ / بحلول / حسب",
+    "calculate": "يحسب",
+    "call": "مكالمة / يتصل",
+    "can": "يستطيع / يمكن",
+    "cancel": "يلغي",
+    "cannot": "لا يستطيع / لا يمكن",
+    "capacity": "طاقة إنتاجية",
+    "carrier": "الناقل / شركة النقل",
+    "carton": "كرتون",
+    "cartons": "كراتين",
+    "catalogue": "كتالوج",
+    "certificate": "شهادة",
+    "certified": "حاصل على شهادة",
+    "change": "يغيّر / تغيير",
+    "changes": "تغييرات",
+    "changing": "تغيير",
+    "channels": "قنوات",
+    "charges": "رسوم",
+    "check": "يتحقق / يفحص",
+    "chocolate": "شوكولاتة",
+    "chocolates": "قطع الشوكولاتة",
+    "choose": "يختار",
+    "clarify": "يوضّح",
+    "clause": "بند (في العقد)",
+    "clear": "واضح",
+    "clearly": "بوضوح",
+    "coating": "الطبقة الخارجية / التغطية",
+    "cocoa": "كاكاو",
+    "colour": "لون",
+    "combine": "يجمع بين",
+    "commercial": "تجاري",
+    "commit": "يلتزم",
+    "commitments": "التزامات",
+    "company": "شركة",
+    "compare": "يقارن",
+    "comparing": "نقارن / مقارنة",
+    "complete": "مكتمل",
+    "compromise": "يتنازل (عن)",
+    "concern": "قلق / مصدر قلق",
+    "condition": "شرط",
+    "conditions": "شروط / ظروف",
+    "confirm": "يؤكد",
+    "confirmation": "تأكيد",
+    "confirmed": "مؤكَّد / تم تأكيده",
+    "confirming": "التأكيد",
+    "consider": "يدرس / ينظر في",
+    "consignee": "المرسل إليه",
+    "consistency": "تجانس / ثبات الجودة",
+    "consistent": "متجانس / ثابت",
+    "contact": "يتواصل مع",
+    "contain": "يحتوي على",
+    "contains": "يحتوي على",
+    "continued": "مستمر",
+    "cooperation": "تعاون",
+    "copy": "نسخة",
+    "correct": "يصحّح",
+    "cost": "تكلفة",
+    "costs": "تكاليف",
+    "could": "هل يمكن (بتهذيب)",
+    "cover": "يغطي / يشمل",
+    "covers": "يغطي / يشمل",
+    "credit": "ائتمان / دائن",
+    "currency": "عملة",
+    "current": "حالي",
+    "currently": "حاليًا",
+    "customers": "عملاء",
+    "damage": "تلف / ضرر",
+    "damaged": "تالف",
+    "dark": "داكن",
+    "data": "بيانات",
+    "date": "تاريخ / موعد",
+    "dates": "تواريخ / مواعيد",
+    "deadline": "موعد نهائي",
+    "deadlines": "مواعيد نهائية",
+    "deciding": "اتخاذ القرار",
+    "delay": "تأخير",
+    "delayed": "متأخر",
+    "delays": "تأخيرات",
+    "deliveries": "تسليمات",
+    "delivery": "تسليم / توصيل",
+    "demand": "الطلب (في السوق)",
+    "deposit": "عربون / دفعة مقدمة",
+    "design": "تصميم",
+    "details": "تفاصيل / بيانات",
+    "deviations": "انحرافات",
+    "did": "هل (للسؤال عن الماضي)",
+    "difference": "فرق",
+    "different": "مختلف",
+    "difficult": "صعب",
+    "dimensions": "أبعاد",
+    "direct": "مباشر",
+    "discount": "خصم",
+    "discuss": "يناقش",
+    "discussed": "ناقشنا / نوقش",
+    "discussion": "نقاش",
+    "dispatch": "إرسال الشحنة / يشحن",
+    "distinguish": "يميّز بين",
+    "distributing": "توزيع",
+    "distribution": "توزيع",
+    "distributor": "موزّع",
+    "do": "هل (للسؤال) / يفعل",
+    "document": "مستند",
+    "documents": "مستندات",
+    "does": "هل (مع المفرد الغائب)",
+    "dollars": "دولارات",
+    "down": "أسفل / (مع الفعل: يدوّن، يفصّل)",
+    "draft": "مسودة",
+    "dried": "مجفف",
+    "due": "مستحق (الدفع)",
+    "during": "أثناء / خلال",
+    "each": "كل",
+    "earliest": "الأقرب / الأبكر",
+    "email": "بريد إلكتروني",
+    "end": "نهاية",
+    "equipment": "معدات",
+    "escalate": "يصعّد (الأمر)",
+    "estimate": "تقدير",
+    "estimated": "تقديري",
+    "estimates": "تقديرات",
+    "evaluate": "يقيّم",
+    "every": "كل",
+    "everything": "كل شيء",
+    "exchange": "صرف (العملة) / مقابل",
+    "exclusive": "حصري",
+    "exclusivity": "الحصرية",
+    "expect": "يتوقع",
+    "expected": "متوقع",
+    "expiry": "انتهاء الصلاحية",
+    "explain": "يشرح / يوضّح",
+    "export": "تصدير",
+    "exposed": "تعرّض (لـ)",
+    "factory": "مصنع",
+    "fairly": "بعدل / بإنصاف",
+    "far": "بعيد / (حتى الآن)",
+    "faster": "أسرع",
+    "fat": "دهن / دهون",
+    "fee": "رسم / رسوم",
+    "feedback": "ملاحظات / تقييم",
+    "fifteen": "خمسة عشر",
+    "fifty": "خمسون",
+    "figures": "أرقام",
+    "filled": "محشو",
+    "filling": "حشوة",
+    "final": "نهائي",
+    "find": "يجد",
+    "finding": "إيجاد",
+    "first": "أول / أولًا",
+    "five": "خمسة",
+    "fixed": "ثابت",
+    "flavour": "نكهة",
+    "flavours": "نكهات",
+    "flexibility": "مرونة",
+    "flexible": "مرن",
+    "follow-up": "متابعة",
+    "following": "متابعة / أتابع",
+    "food": "غذاء / غذائي",
+    "for": "لـ / من أجل",
+    "forecast": "توقعات (الطلب والمبيعات)",
+    "forma": "شكلي (فاتورة أولية)",
+    "forward": "إلى الأمام / (مع الفعل: يتطلع)",
+    "free": "مجاني",
+    "freight": "شحن (البضائع)",
+    "from": "من",
+    "further": "إضافي / أكثر",
+    "good": "جيد",
+    "goods": "بضاعة / بضائع",
+    "gross": "إجمالي (الوزن القائم)",
+    "halal": "حلال",
+    "handled": "يُعالَج / يُدار",
+    "handles": "يتولى / يتعامل مع",
+    "happening": "حدوث",
+    "has": "قد (فعل مساعد) / لديه",
+    "have": "لدى / قد (فعل مساعد)",
+    "hazelnut": "بندق",
+    "hearing": "السماع (تلقّي الرد)",
+    "heat": "حرارة",
+    "hello": "مرحبًا",
+    "help": "يساعد",
+    "here": "هنا",
+    "higher": "أعلى",
+    "hold": "يعلّق التصرف في / يحتجز",
+    "holiday": "عيد / عطلة",
+    "hot": "حار",
+    "how": "كيف / كم",
+    "hundred": "مئة",
+    "i": "أنا",
+    "identify": "يحدّد",
+    "if": "إذا",
+    "ignore": "يتجاهل",
+    "image": "صورة",
+    "immediate": "فوري",
+    "important": "مهم",
+    "improve": "يحسّن",
+    "in": "في",
+    "include": "يشمل / يتضمن",
+    "included": "مشمول / مضمَّن",
+    "includes": "يشمل",
+    "increase": "يزيد / زيادة",
+    "increased": "ارتفع / زاد",
+    "individually": "بشكل فردي",
+    "information": "معلومات",
+    "ingredient": "مكوّن",
+    "ingredients": "مكونات",
+    "inspect": "يفحص",
+    "inspection": "فحص / معاينة",
+    "instead": "بدلًا من ذلك",
+    "instructions": "تعليمات",
+    "insurance": "تأمين",
+    "interested": "مهتم",
+    "interim": "مؤقت",
+    "investigate": "يحقق في",
+    "invoice": "فاتورة",
+    "is": "يكون (للمفرد)",
+    "issue": "مشكلة / يُصدر",
+    "issues": "مشكلات / مسائل",
+    "istanbul": "إسطنبول",
+    "it": "هو / هي (لغير العاقل)",
+    "item": "صنف / بند",
+    "items": "أصناف",
+    "its": "ـه / ـها (لغير العاقل)",
+    "journey": "رحلة",
+    "keep": "يحتفظ بـ / يُبقي",
+    "know": "يعرف / يعلم",
+    "label": "ملصق / يضع ملصقًا",
+    "labels": "ملصقات",
+    "laith": "ليث (اسم علم)",
+    "landed": "واصل (تكلفة حتى الوصول)",
+    "larger": "أكبر",
+    "late": "متأخر",
+    "later": "لاحقًا",
+    "latest": "أحدث",
+    "lead": "مدة (التوريد)",
+    "least": "الأقل (على الأقل)",
+    "left": "غادر / غادرت",
+    "less": "أقل",
+    "let": "دع / دعنا",
+    "life": "مدة / عمر (الصلاحية)",
+    "like": "يودّ / يشاء / مثل",
+    "limit": "حد",
+    "list": "قائمة / يُدرج",
+    "listed": "مذكور / مُدرج",
+    "location": "مكان / موقع",
+    "logo": "شعار",
+    "long": "طويل / (كم) المدة",
+    "long-term": "طويل الأجل",
+    "longer": "أطول / (لم يعد)",
+    "look": "ينظر / يتطلع (إلى)",
+    "looking": "نبحث (عن)",
+    "looks": "يبدو",
+    "low": "منخفض",
+    "lower": "أقل / يخفّض",
+    "made": "مصنوع / أُجري",
+    "main": "رئيسي",
+    "maintain": "يحافظ على",
+    "making": "إجراء (تغييرات)",
+    "manager": "مدير",
+    "manufacture": "يصنّع",
+    "many": "كثير / (كم) العدد",
+    "margin": "هامش الربح",
+    "market": "سوق",
+    "mass": "بكميات كبيرة",
+    "match": "يطابق",
+    "matches": "يطابق / يتطابق",
+    "matching": "مطابقة",
+    "may": "هل يمكنني (استئذان)",
+    "me": "ـني / لي",
+    "mean": "يعني / يقصد",
+    "meet": "يلتقي / يلتزم (بموعد)",
+    "meeting": "اجتماع",
+    "melting": "ذوبان",
+    "milk": "حليب",
+    "minimum": "الحد الأدنى",
+    "missing": "ناقص / مفقود",
+    "month": "شهر",
+    "months": "أشهر",
+    "more": "أكثر / المزيد",
+    "morning": "صباح",
+    "much": "كثير / (كم) المقدار",
+    "must": "يجب",
+    "my": "ـي (ضمير ملكية)",
+    "name": "اسم",
+    "necessary": "ضروري",
+    "need": "يحتاج",
+    "needed": "مطلوب / لازم",
+    "net": "صافٍ",
+    "next": "القادم / التالي",
+    "nice": "سارّ / لطيف",
+    "nine": "تسعة",
+    "no": "لا / لا يوجد",
+    "not": "لا / ليس",
+    "note": "إشعار (مستند)",
+    "nothing": "لا شيء",
+    "notice": "مهلة إخطار",
+    "noticed": "لاحظنا",
+    "notify": "يُخطر / يُبلغ",
+    "number": "رقم / عدد",
+    "numbers": "أرقام",
+    "nutrition": "التغذية / المعلومات الغذائية",
+    "nuts": "مكسرات",
+    "of": "من / (أداة إضافة)",
+    "offer": "عرض / يقدّم",
+    "offers": "عروض",
+    "offset": "يعوّض",
+    "old": "قديم",
+    "on": "على / في",
+    "once": "حالما / بعد أن",
+    "one": "واحد",
+    "online": "عبر الإنترنت",
+    "only": "فقط",
+    "or": "أو / أم",
+    "order": "طلب / يطلب",
+    "orders": "طلبات",
+    "origin": "المنشأ",
+    "other": "آخر / الآخر",
+    "our": "ـنا (ضمير ملكية)",
+    "outer": "خارجي",
+    "outstanding": "عالق / مستحق",
+    "overdue": "متأخر السداد",
+    "own": "خاص (بـ)",
+    "owns": "يملك",
+    "pack": "عبوة",
+    "packaging": "التعبئة / العبوة / التغليف",
+    "packed": "معبأ",
+    "packing": "تعبئة",
+    "packs": "عبوات",
+    "pallet": "بالتة / طبلية",
+    "pallets": "بالتات / طبليات",
+    "partial": "جزئي",
+    "partnership": "شراكة",
+    "party": "طرف (في العقد)",
+    "pay": "يدفع",
+    "paying": "دفع",
+    "payment": "الدفع / دفعة",
+    "per": "لكل",
+    "percentage": "نسبة مئوية",
+    "performance": "الأداء",
+    "period": "فترة",
+    "person": "شخص",
+    "photos": "صور",
+    "piece": "قطعة",
+    "pieces": "قطع",
+    "place": "يقدّم (طلبًا)",
+    "plan": "خطة",
+    "please": "يرجى / من فضلك",
+    "points": "نقاط",
+    "position": "موقف",
+    "postpone": "يؤجّل",
+    "prefer": "يفضّل",
+    "prepare": "يجهّز / يُعدّ",
+    "prepared": "مستعد",
+    "prevent": "يمنع",
+    "previous": "سابق",
+    "price": "سعر",
+    "pricing": "التسعير",
+    "printed": "مطبوع",
+    "printing": "الطباعة",
+    "priorities": "أولويات",
+    "private": "خاص",
+    "pro": "أوّلي (فاتورة أولية)",
+    "procedure": "إجراء",
+    "proceed": "يمضي قدمًا",
+    "process": "إجراء / آلية",
+    "produce": "ينتج",
+    "product": "منتج",
+    "production": "إنتاج",
+    "products": "منتجات",
+    "promptly": "بسرعة / دون تأخير",
+    "proof": "نموذج تجريبي (للطباعة)",
+    "proposal": "مقترح",
+    "propose": "يقترح",
+    "proposed": "مقترَح",
+    "protect": "يحمي",
+    "provide": "يوفّر / يقدّم",
+    "provided": "بشرط (أن)",
+    "purchase": "شراء",
+    "put": "يضع / يوثّق (كتابةً)",
+    "quality": "جودة",
+    "quantities": "كميات",
+    "quantity": "كمية",
+    "quarter": "ربع السنة",
+    "quarterly": "ربع سنوي",
+    "quotation": "عرض سعر",
+    "quote": "عرض سعر / يسعّر",
+    "range": "نطاق",
+    "rate": "سعر (الصرف) / معدل",
+    "rather": "بالأحرى / (بدلًا من)",
+    "reached": "توصّلنا إلى",
+    "ready": "جاهز / مستعد",
+    "realistic": "واقعي",
+    "reason": "سبب",
+    "receipt": "استلام",
+    "received": "استلمنا / مُستلَم",
+    "recent": "حديث",
+    "recommend": "يوصي بـ",
+    "reconcile": "يطابق (الحسابات)",
+    "record": "سجل",
+    "records": "يوثّق / يسجّل",
+    "recovery": "معالجة / تدارك (التأخير)",
+    "reduce": "يخفّض / يقلّل",
+    "refund": "استرداد المبلغ",
+    "regular": "منتظم",
+    "relationship": "علاقة",
+    "reliable": "موثوق",
+    "remain": "يتبقى / ما زال",
+    "remaining": "متبقٍّ",
+    "remove": "يحذف / يزيل",
+    "renewing": "تجديد",
+    "reorder": "إعادة الطلب",
+    "repeat": "يكرّر / متكرر",
+    "replace": "يستبدل",
+    "replacement": "استبدال / بديل",
+    "replacements": "بدائل (منتجات بديلة)",
+    "reply": "رد",
+    "reporting": "الإبلاغ عن",
+    "requested": "مطلوب / طلبناه",
+    "requests": "يطلب",
+    "require": "يشترط / يتطلب",
+    "reserve": "يحجز",
+    "resolve": "يحلّ",
+    "resolved": "حُلّ / تم حلّه",
+    "resolving": "حلّ (مشكلة)",
+    "respond": "يردّ",
+    "responsibilities": "مسؤوليات",
+    "responsible": "مسؤول",
+    "retail": "البيع بالتجزئة",
+    "review": "مراجعة / يراجع",
+    "reviewed": "تمت مراجعته",
+    "reviewing": "مراجعة",
+    "revised": "معدَّل",
+    "rotate": "يصرّف / يدوّر (المخزون)",
+    "run": "دورة (إنتاج)",
+    "safely": "بسلام / بأمان",
+    "sales": "مبيعات",
+    "same": "نفس / نفسه",
+    "sample": "عينة",
+    "samples": "عينات",
+    "schedule": "جدول / يحدّد موعدًا",
+    "season": "موسم",
+    "secure": "يثبّت",
+    "sell": "يبيع",
+    "sellers": "(الأصناف) الأكثر مبيعًا",
+    "send": "يرسل",
+    "separate": "منفصل / يفصل",
+    "separately": "بشكل منفصل",
+    "setup": "تجهيز (خط الإنتاج)",
+    "several": "عدة",
+    "share": "يشارك / يرسل",
+    "sheet": "ورقة (مواصفات)",
+    "shelf": "رفّ (مدة الصلاحية)",
+    "ship": "يشحن",
+    "shipment": "شحنة",
+    "shipping": "الشحن",
+    "shops": "متاجر",
+    "shorter": "أقصر",
+    "should": "يجب / ينبغي",
+    "showroom": "صالة عرض",
+    "sides": "الطرفان / الجانبان",
+    "sign": "يوقّع",
+    "signing": "التوقيع",
+    "signs": "علامات",
+    "six": "ستة",
+    "size": "حجم",
+    "sizes": "أحجام",
+    "slowly": "ببطء",
+    "small": "صغير",
+    "smaller": "أصغر",
+    "smooth": "ناعم",
+    "so": "لكي / إلى هذا الحد",
+    "solution": "حل",
+    "some": "بعض",
+    "sounds": "يبدو (من الكلام)",
+    "soy": "صويا",
+    "speak": "يتحدث",
+    "specification": "مواصفات",
+    "specifications": "مواصفات",
+    "specify": "يحدّد",
+    "spread": "موزَّع (على فترة)",
+    "standard": "معتاد / قياسي",
+    "start": "يبدأ",
+    "statement": "كشف حساب",
+    "status": "حالة",
+    "step": "خطوة",
+    "stock": "مخزون",
+    "storage": "تخزين",
+    "stored": "يُخزَّن / مخزَّن",
+    "subject": "مشروط (بـ)",
+    "sugar": "سكر",
+    "sugar-free": "خالٍ من السكر",
+    "suggest": "يقترح",
+    "suitable": "مناسب",
+    "summarise": "يلخّص",
+    "summary": "ملخص",
+    "sunlight": "أشعة الشمس",
+    "supermarkets": "محلات السوبرماركت",
+    "supplier": "مورد",
+    "supply": "يورّد",
+    "support": "يدعم",
+    "sweet": "حلو",
+    "sweets": "حلويات",
+    "target": "مستهدف / هدف",
+    "targets": "أهداف",
+    "taste": "طعم / مذاق",
+    "tell": "يخبر",
+    "temperature": "درجة الحرارة",
+    "temperature-controlled": "بدرجة حرارة مضبوطة",
+    "ten": "عشرة",
+    "terms": "الشروط",
+    "territory": "المنطقة (نطاق التوزيع)",
+    "texture": "قوام",
+    "than": "مِن (للمقارنة)",
+    "thank": "يشكر",
+    "that": "ذلك / أنّ / الذي",
+    "the": "الـ",
+    "them": "ـها / ـهم",
+    "then": "إذن / ثم",
+    "there": "هناك / يوجد",
+    "these": "هذه / هؤلاء",
+    "thicker": "أكثر سماكة",
+    "this": "هذا / هذه",
+    "three": "ثلاثة",
+    "thursday": "يوم الخميس",
+    "time": "وقت / مدة / مرة",
+    "to": "إلى / أن / لـ",
+    "today": "اليوم",
+    "tomatoes": "طماطم",
+    "tomorrow": "غدًا",
+    "too": "أكثر من اللازم",
+    "total": "الإجمالي / كلي",
+    "trace": "يتتبع (إلى المصدر)",
+    "track": "يتتبع / يتابع",
+    "tracking": "التتبع",
+    "transfer": "تحويل",
+    "transit": "النقل (في الطريق)",
+    "transparent": "شفاف",
+    "transport": "نقل",
+    "treat": "يعتبر / يعامل",
+    "trial": "تجريبي",
+    "twelve": "اثنا عشر",
+    "twenty": "عشرون",
+    "two": "اثنان",
+    "under": "تحت / باسم",
+    "understand": "يفهم",
+    "unit": "وحدة",
+    "unknown": "غير معروف",
+    "unsold": "غير مباع",
+    "until": "حتى / إلى أن",
+    "up": "أعلى / (مع الفعل: يتابع)",
+    "update": "يُطلع على المستجدات",
+    "updates": "تحديثات / مستجدات",
+    "us": "ـنا / لنا",
+    "use": "يستخدم",
+    "used": "استُخدم / مستخدَم",
+    "useless": "عديم الفائدة",
+    "valid": "سارٍ / صالح",
+    "value": "يقدّر / قيمة",
+    "vegetable": "نباتي",
+    "version": "نسخة",
+    "video": "فيديو",
+    "visit": "يزور / زيارة",
+    "volume": "حجم / كمية",
+    "want": "يريد",
+    "warehouse": "مستودع",
+    "was": "كان",
+    "way": "طريقة",
+    "we": "نحن",
+    "weather": "طقس",
+    "week": "أسبوع",
+    "weekly": "أسبوعي",
+    "weeks": "أسابيع",
+    "weight": "وزن",
+    "what": "ما / ماذا",
+    "whatsapp": "واتساب",
+    "when": "متى / عندما",
+    "where": "أين",
+    "which": "أي / ما (للاختيار)",
+    "who": "مَن",
+    "wholesale": "بالجملة / الجملة",
+    "will": "سوف / سـ",
+    "with": "مع / بـ",
+    "within": "داخل / ضمن",
+    "without": "دون / بدون",
+    "word": "كلمة",
+    "works": "يناسب / يصلح",
+    "would": "صيغة تهذيب / سوف",
+    "wrapped": "مغلّف",
+    "write": "يكتب",
+    "writing": "كتابةً / الكتابة",
+    "written": "كتابي / مكتوب",
+    "wrong": "مخطئ / خطأ",
+    "yes": "نعم",
+    "you": "أنت / أنتم",
+    "your": "ـك / ـكم (ضمير ملكية)"
+  },
+  "lessons": [
+    {
+      "id": 0,
+      "tip": "«We are based in…» تعني «مقرّنا في…» وهي الصيغة المهنية لذكر موقع الشركة. قل «We» لا «I» حين تتحدث باسم نشاطك التجاري.",
+      "keywords": [
+        {
+          "en": "wholesale buyer",
+          "ar": "مشترٍ بالجملة"
+        },
+        {
+          "en": "food products",
+          "ar": "منتجات غذائية"
+        },
+        {
+          "en": "based in",
+          "ar": "مقرّنا في"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "tip": "بعد «look forward to» يأتي الفعل منتهيًا بـ ing: «hearing» لا «hear». وهي خاتمة مهذبة ثابتة في رسائل العمل.",
+      "keywords": [
+        {
+          "en": "sales manager",
+          "ar": "مدير المبيعات"
+        },
+        {
+          "en": "export orders",
+          "ar": "طلبات التصدير"
+        },
+        {
+          "en": "email address",
+          "ar": "عنوان البريد الإلكتروني"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tip": "«per box» تعني «لكل علبة» و«per carton» «لكل كرتون». اسأل عن الوحدة قبل مقارنة أي سعر، فالكرتون يضم عدة علب.",
+      "keywords": [
+        {
+          "en": "per carton",
+          "ar": "لكل كرتون"
+        },
+        {
+          "en": "the total",
+          "ar": "الإجمالي"
+        },
+        {
+          "en": "currency",
+          "ar": "العملة"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tip": "حروف الجر مع الوقت: «at ten» للساعة و«in the morning» لجزء اليوم، أما «tomorrow» فتأتي بلا حرف جر.",
+      "keywords": [
+        {
+          "en": "available",
+          "ar": "متاح"
+        },
+        {
+          "en": "video call",
+          "ar": "مكالمة فيديو"
+        },
+        {
+          "en": "meeting time",
+          "ar": "موعد الاجتماع"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "tip": "النبر يفرّق بين الرقمين: «fifty» (٥٠) نبرها على المقطع الأول، و«fifteen» (١٥) على الأخير. عند الشك اطلب كتابة الرقم.",
+      "keywords": [
+        {
+          "en": "more slowly",
+          "ar": "ببطء أكثر"
+        },
+        {
+          "en": "repeat that",
+          "ar": "تكرار ذلك"
+        },
+        {
+          "en": "write that down",
+          "ar": "كتابة ذلك / تدوينه"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "tip": "«interested in» تأتي دائمًا مع in، و«looking for» مع for. و«We would like to…» أكثر تهذيبًا من «We want to…».",
+      "keywords": [
+        {
+          "en": "reliable supplier",
+          "ar": "مورد موثوق"
+        },
+        {
+          "en": "small order",
+          "ar": "طلب صغير"
+        },
+        {
+          "en": "good quality",
+          "ar": "جودة جيدة"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "tip": "«in stock» تعني «متوفر في المخزون» وعكسها «out of stock». و«catalogue» تهجئة بريطانية، وبالأمريكية «catalog».",
+      "keywords": [
+        {
+          "en": "best sellers",
+          "ar": "الأكثر مبيعًا"
+        },
+        {
+          "en": "in stock",
+          "ar": "متوفر في المخزون"
+        },
+        {
+          "en": "sugar-free",
+          "ar": "خالٍ من السكر"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "tip": "مع المفرد نسأل بـ «Does … contain…?» والفعل بعدها بلا s: «Does it contain milk?» لا «contains».",
+      "keywords": [
+        {
+          "en": "ingredients",
+          "ar": "المكونات"
+        },
+        {
+          "en": "allergen information",
+          "ar": "معلومات مسببات الحساسية"
+        },
+        {
+          "en": "halal certified",
+          "ar": "حاصل على شهادة حلال"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "tip": "«shelf life» مدة (مثل ١٢ شهرًا) أما «expiry date» فتاريخ محدد. والأهم للمشتري: كم يتبقى منها «on delivery» أي عند التسليم.",
+      "keywords": [
+        {
+          "en": "shelf life",
+          "ar": "مدة الصلاحية"
+        },
+        {
+          "en": "expiry date",
+          "ar": "تاريخ انتهاء الصلاحية"
+        },
+        {
+          "en": "batch number",
+          "ar": "رقم التشغيلة"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "tip": "«free» هنا تعني «مجاني» لا «حر». و«match» تعني «يطابق»: تأكد دائمًا أن «the sample» تطابق «the final product».",
+      "keywords": [
+        {
+          "en": "samples",
+          "ar": "عينات"
+        },
+        {
+          "en": "taste and texture",
+          "ar": "الطعم والقوام"
+        },
+        {
+          "en": "feedback",
+          "ar": "ملاحظات"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "tip": "التدرّج من الأصغر إلى الأكبر: «piece» قطعة، ثم «box» علبة، ثم «carton» كرتون. و«How many» تُستخدم للمعدود.",
+      "keywords": [
+        {
+          "en": "net weight",
+          "ar": "الوزن الصافي"
+        },
+        {
+          "en": "carton dimensions",
+          "ar": "أبعاد الكرتون"
+        },
+        {
+          "en": "individually wrapped",
+          "ar": "مغلفة بشكل فردي"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "tip": "«in bulk» تعني التعبئة بكميات كبيرة لا في عبوات صغيرة. و«colour» تهجئة بريطانية، وفي الأمريكية «color».",
+      "keywords": [
+        {
+          "en": "in bulk",
+          "ar": "بكميات كبيرة"
+        },
+        {
+          "en": "added sugar",
+          "ar": "سكر مضاف"
+        },
+        {
+          "en": "product specifications",
+          "ar": "مواصفات المنتج"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "tip": "«quotation» اسم (عرض سعر) واختصاره «quote»، و«quote» أيضًا فعل: «Could you quote for…?». و«valid» تعني سريان العرض.",
+      "keywords": [
+        {
+          "en": "price list",
+          "ar": "قائمة الأسعار"
+        },
+        {
+          "en": "quotation",
+          "ar": "عرض السعر"
+        },
+        {
+          "en": "valid",
+          "ar": "سارٍ / صالح"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "tip": "«minimum order quantity» تُختصر كتابةً إلى MOQ. والفعل المستخدم مع الطلب هو «place»: «place a trial order» لا «make».",
+      "keywords": [
+        {
+          "en": "minimum order quantity",
+          "ar": "الحد الأدنى لكمية الطلب"
+        },
+        {
+          "en": "trial order",
+          "ar": "طلب تجريبي"
+        },
+        {
+          "en": "flavour",
+          "ar": "نكهة"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "tip": "نمط تفاوض قوي: «If we …, can you …?» مثل «If we order more, can you lower the unit price?» فتربط الخصم بمقابل.",
+      "keywords": [
+        {
+          "en": "discount",
+          "ar": "خصم"
+        },
+        {
+          "en": "unit price",
+          "ar": "سعر الوحدة"
+        },
+        {
+          "en": "above our budget",
+          "ar": "أعلى من ميزانيتنا"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "tip": "في المقارنة: الصفة القصيرة تأخذ er مثل «shorter»، والطويلة تسبقها more مثل «more important than». و«than» تعني «مِن».",
+      "keywords": [
+        {
+          "en": "delivery time",
+          "ar": "مدة التسليم"
+        },
+        {
+          "en": "price difference",
+          "ar": "فرق السعر"
+        },
+        {
+          "en": "several offers",
+          "ar": "عدة عروض"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "tip": "«deposit» هو العربون المدفوع مقدمًا و«balance» المبلغ المتبقي، و«due» تعني «مستحق». ونقول «pay by bank transfer» بحرف by.",
+      "keywords": [
+        {
+          "en": "payment terms",
+          "ar": "شروط الدفع"
+        },
+        {
+          "en": "pro forma invoice",
+          "ar": "فاتورة أولية"
+        },
+        {
+          "en": "bank transfer",
+          "ar": "تحويل بنكي"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "tip": "«once» هنا تعني «حالما / بعد أن» لا «مرة واحدة»: «We will proceed once the details are confirmed» أي لا مضيّ قبل التأكيد.",
+      "keywords": [
+        {
+          "en": "written confirmation",
+          "ar": "تأكيد كتابي"
+        },
+        {
+          "en": "without approval",
+          "ar": "دون موافقة"
+        },
+        {
+          "en": "quantities",
+          "ar": "الكميات"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "tip": "«lead time» هي المدة من تأكيد الطلب حتى جاهزيته. و«meet … deadline» تعني الالتزام بالموعد النهائي، لا «مقابلة».",
+      "keywords": [
+        {
+          "en": "lead time",
+          "ar": "مهلة التوريد / المدة اللازمة"
+        },
+        {
+          "en": "deadline",
+          "ar": "الموعد النهائي"
+        },
+        {
+          "en": "production status",
+          "ar": "حالة الإنتاج"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "tip": "«gross weight» الوزن الإجمالي مع التغليف، وعكسه «net weight» الصافي. و«label» هنا فعل: «label each pallet» أي ضع ملصقًا.",
+      "keywords": [
+        {
+          "en": "pallets",
+          "ar": "بالتات"
+        },
+        {
+          "en": "gross weight",
+          "ar": "الوزن الإجمالي"
+        },
+        {
+          "en": "shipment volume",
+          "ar": "حجم الشحنة"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "tip": "«freight» شحن البضائع تجاريًا، و«transit time» مدة الطريق فقط. اسأل «Are there any additional charges?» لكشف الرسوم الخفية.",
+      "keywords": [
+        {
+          "en": "freight quotation",
+          "ar": "عرض سعر للشحن"
+        },
+        {
+          "en": "transit time",
+          "ar": "مدة النقل"
+        },
+        {
+          "en": "additional charges",
+          "ar": "رسوم إضافية"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "tip": "«consignee» هو المرسل إليه، أي مستلم الشحنة. و«correct» هنا فعل بمعنى «يصحّح»: «Please correct the document».",
+      "keywords": [
+        {
+          "en": "packing list",
+          "ar": "قائمة التعبئة"
+        },
+        {
+          "en": "commercial invoice",
+          "ar": "الفاتورة التجارية"
+        },
+        {
+          "en": "certificate of origin",
+          "ar": "شهادة المنشأ"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "tip": "احفظ التركيبين: «protect … from heat» (يحمي من) و«keep … away from … sunlight» (يُبقي بعيدًا عن)؛ وكلاهما مع from.",
+      "keywords": [
+        {
+          "en": "storage temperature",
+          "ar": "درجة حرارة التخزين"
+        },
+        {
+          "en": "temperature-controlled",
+          "ar": "بدرجة حرارة مضبوطة"
+        },
+        {
+          "en": "direct sunlight",
+          "ar": "أشعة الشمس المباشرة"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "tip": "«left» هنا تصريف «leave» أي «غادر» لا «يسار». و«goods» (بضاعة) تأتي دائمًا بصيغة الجمع ولا يُقال «a good».",
+      "keywords": [
+        {
+          "en": "warehouse",
+          "ar": "المستودع"
+        },
+        {
+          "en": "tracking details",
+          "ar": "تفاصيل التتبع"
+        },
+        {
+          "en": "arrival date",
+          "ar": "تاريخ الوصول"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "tip": "«damaged» صفة (تالف) و«damage» اسم (التلف): «arrived damaged» لكن «photos of the damage». و«missing» تعني «ناقص».",
+      "keywords": [
+        {
+          "en": "damaged",
+          "ar": "تالف"
+        },
+        {
+          "en": "missing",
+          "ar": "ناقص"
+        },
+        {
+          "en": "approved sample",
+          "ar": "العينة المعتمدة"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "tip": "ثلاثة حلول: «replacement» بديل، «refund» استرداد المبلغ، «credit note» إشعار دائن يُخصم من فاتورة لاحقة. حدّد أيها تريد.",
+      "keywords": [
+        {
+          "en": "replacement",
+          "ar": "استبدال / بديل"
+        },
+        {
+          "en": "refund",
+          "ar": "استرداد القيمة"
+        },
+        {
+          "en": "credit note",
+          "ar": "إشعار دائن"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "tip": "«private label» منتج يصنعه المورد ويُباع باسم علامتك. و«artwork» هو التصميم الفني للعبوة؛ اعتمده كتابةً «before printing».",
+      "keywords": [
+        {
+          "en": "private label",
+          "ar": "علامة خاصة"
+        },
+        {
+          "en": "brand name",
+          "ar": "اسم العلامة التجارية"
+        },
+        {
+          "en": "artwork",
+          "ar": "التصميم الفني"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "tip": "«Would you consider…?» صيغة لبقة لجسّ النبض دون التزام. وبعد «interested in» يأتي الفعل بـ ing: «distributing».",
+      "keywords": [
+        {
+          "en": "distributor",
+          "ar": "موزّع"
+        },
+        {
+          "en": "exclusive distribution",
+          "ar": "التوزيع الحصري"
+        },
+        {
+          "en": "sales targets",
+          "ar": "أهداف المبيعات"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "tip": "«so far» تعني «حتى الآن». و«summarise» فعل و«summary» اسم؛ والتهجئة بحرف s بريطانية، وبالأمريكية «summarize».",
+      "keywords": [
+        {
+          "en": "main priorities",
+          "ar": "الأولويات الرئيسية"
+        },
+        {
+          "en": "responsible for",
+          "ar": "مسؤول عن"
+        },
+        {
+          "en": "next step",
+          "ar": "الخطوة التالية"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "tip": "«Please find … attached» صيغة ثابتة في البريد تعني «تجدون مرفقًا». و«by Thursday» تعني في موعد أقصاه يوم الخميس.",
+      "keywords": [
+        {
+          "en": "following up",
+          "ar": "أتابع (معكم)"
+        },
+        {
+          "en": "attached",
+          "ar": "مرفق"
+        },
+        {
+          "en": "confirm receipt",
+          "ar": "تأكيد الاستلام"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "tip": "«provided that» تعني «بشرط أن» وهي أوضح من «if» في ربط القبول بشرط: «…provided that delivery is included».",
+      "keywords": [
+        {
+          "en": "provided that",
+          "ar": "بشرط أن"
+        },
+        {
+          "en": "flexible on",
+          "ar": "مرن في"
+        },
+        {
+          "en": "alternatives",
+          "ar": "بدائل"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "tip": "اعترض بلباقة بنمط «We appreciate …, but …»: ابدأ بالتقدير ثم اذكر العقبة. و«rather than» تعني «بدلًا من».",
+      "keywords": [
+        {
+          "en": "current terms",
+          "ar": "الشروط الحالية"
+        },
+        {
+          "en": "price increase",
+          "ar": "زيادة السعر"
+        },
+        {
+          "en": "compromise on quality",
+          "ar": "التنازل عن الجودة"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "tip": "«notice» هنا اسم بمعنى «مهلة إخطار مسبق» لا «يلاحظ». و«estimates» تقديرات غير ملزمة، عكس «confirmed orders».",
+      "keywords": [
+        {
+          "en": "holiday season",
+          "ar": "موسم الأعياد"
+        },
+        {
+          "en": "production capacity",
+          "ar": "طاقة إنتاجية"
+        },
+        {
+          "en": "forecast",
+          "ar": "التوقعات"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "tip": "«have the draft reviewed» تعني أن جهة أخرى (كالمحامي) ستراجع المسودة لكم. و«in writing» تعني «كتابةً» لتوثيق الاتفاق.",
+      "keywords": [
+        {
+          "en": "clause",
+          "ar": "بند"
+        },
+        {
+          "en": "each party",
+          "ar": "كل طرف"
+        },
+        {
+          "en": "in writing",
+          "ar": "كتابةً"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "tip": "«escalate» تعني رفع المشكلة إلى مسؤول أعلى دون عدائية. و«distinguish … from …» تعني «يميّز بين … و…».",
+      "keywords": [
+        {
+          "en": "recovery plan",
+          "ar": "خطة معالجة"
+        },
+        {
+          "en": "partial shipment",
+          "ar": "شحنة جزئية"
+        },
+        {
+          "en": "interim solution",
+          "ar": "حل مؤقت"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "tip": "«outstanding» في التجارة تعني «عالق / لم يُحسم بعد» لا «ممتاز»: «outstanding points» هي النقاط التي لم تُحلّ.",
+      "keywords": [
+        {
+          "en": "outstanding points",
+          "ar": "النقاط العالقة"
+        },
+        {
+          "en": "final version",
+          "ar": "النسخة النهائية"
+        },
+        {
+          "en": "long-term relationship",
+          "ar": "علاقة طويلة الأجل"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "tip": "«filling» الحشوة الداخلية و«coating» طبقة التغطية الخارجية. و«retail pack» عبوة البيع للمستهلك، ويقابلها «wholesale».",
+      "keywords": [
+        {
+          "en": "cocoa butter",
+          "ar": "زبدة الكاكاو"
+        },
+        {
+          "en": "retail pack",
+          "ar": "عبوة البيع بالتجزئة"
+        },
+        {
+          "en": "vegetable fat",
+          "ar": "دهون نباتية"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "tip": "«made on equipment that also handles nuts» تنبيه إلى تلوّث عرَضي: المنتج بلا مكسرات لكن معدّاته تتعامل معها.",
+      "keywords": [
+        {
+          "en": "specification sheet",
+          "ar": "ورقة مواصفات"
+        },
+        {
+          "en": "nutrition label",
+          "ar": "ملصق المعلومات الغذائية"
+        },
+        {
+          "en": "valid certificate",
+          "ar": "شهادة سارية"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "tip": "«applies only to» تحصر موافقتك: «Our approval applies only to the specifications listed here» فلا تُعمَّم على غيرها.",
+      "keywords": [
+        {
+          "en": "revised sample",
+          "ar": "عينة معدلة"
+        },
+        {
+          "en": "bulk order",
+          "ar": "طلب الجملة"
+        },
+        {
+          "en": "sample approval",
+          "ar": "اعتماد العينة"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "tip": "«carrier» هو الناقل (شركة النقل) لا المورد. اطلب منه «temperature record» فهو دليلك إن ظهرت «signs of melting».",
+      "keywords": [
+        {
+          "en": "storage conditions",
+          "ar": "ظروف التخزين"
+        },
+        {
+          "en": "temperature range",
+          "ar": "نطاق درجات الحرارة"
+        },
+        {
+          "en": "signs of melting",
+          "ar": "علامات ذوبان"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "tip": "«at least» تعني «على الأقل» وتحدد حدّك الأدنى. و«hold the affected stock» تعني إيقاف التصرف في المخزون لا «الإمساك» به.",
+      "keywords": [
+        {
+          "en": "remaining shelf life",
+          "ar": "مدة الصلاحية المتبقية"
+        },
+        {
+          "en": "affected batch",
+          "ar": "الدفعة المتأثرة"
+        },
+        {
+          "en": "batch numbers",
+          "ar": "أرقام الدفعات"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "tip": "«purchase order» أمر شراء ملزم ويُختصر PO، أما «forecast» فتوقّع غير ملزم. فرّق بينهما صراحةً لتتجنب التزامًا لم تقصده.",
+      "keywords": [
+        {
+          "en": "purchase order",
+          "ar": "أمر شراء"
+        },
+        {
+          "en": "reorder schedule",
+          "ar": "جدول إعادة الطلب"
+        },
+        {
+          "en": "backup supplier",
+          "ar": "مورد بديل"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "tip": "«landed cost» هي التكلفة الكاملة حتى وصول البضاعة: السعر والشحن والتأمين والرسوم. قارن العروض بها لا بـ «unit price».",
+      "keywords": [
+        {
+          "en": "landed cost",
+          "ar": "التكلفة حتى وصول البضاعة"
+        },
+        {
+          "en": "target margin",
+          "ar": "هامش الربح المستهدف"
+        },
+        {
+          "en": "exchange rate",
+          "ar": "سعر الصرف"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "tip": "«in exchange for» تعني «مقابل»: تقدّم تنازلًا وتطلب ما يقابله. و«one at a time» تعني «واحدة تلو الأخرى».",
+      "keywords": [
+        {
+          "en": "quarterly orders",
+          "ar": "طلبات ربع سنوية"
+        },
+        {
+          "en": "in exchange for",
+          "ar": "مقابل"
+        },
+        {
+          "en": "payment schedule",
+          "ar": "جدول الدفع"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "tip": "«overdue» فاتورة تجاوزت موعد سدادها، و«outstanding balance» رصيد لم يُسدَّد بعد. وأي تغيير في «bank details» يُؤكَّد كتابةً.",
+      "keywords": [
+        {
+          "en": "bank charges",
+          "ar": "الرسوم البنكية"
+        },
+        {
+          "en": "credit limit",
+          "ar": "حد ائتماني"
+        },
+        {
+          "en": "outstanding balance",
+          "ar": "الرصيد المستحق"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "tip": "«subject to» تعني «مشروط بـ»: «exclusivity subject to realistic sales targets». وبعد «suggest» يأتي الفعل بـ ing: «reviewing».",
+      "keywords": [
+        {
+          "en": "territory",
+          "ar": "المنطقة"
+        },
+        {
+          "en": "distribution agreement",
+          "ar": "اتفاقية التوزيع"
+        },
+        {
+          "en": "unsold stock",
+          "ar": "المخزون غير المباع"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "tip": "«printed proof» نموذج مطبوع تعتمده قبل «mass production». و«production run» دورة إنتاج واحدة، ولها «setup cost» للتجهيز.",
+      "keywords": [
+        {
+          "en": "setup cost",
+          "ar": "تكلفة التجهيز"
+        },
+        {
+          "en": "printed proof",
+          "ar": "نموذج مطبوع"
+        },
+        {
+          "en": "mass production",
+          "ar": "الإنتاج بكميات كبيرة"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "tip": "«action item» مهمة محددة لها مسؤول وموعد. واختم الاجتماع ببريد «records our discussion» ليصبح ما اتفقتم عليه موثقًا.",
+      "keywords": [
+        {
+          "en": "action item",
+          "ar": "مهمة متابعة"
+        },
+        {
+          "en": "the draft",
+          "ar": "المسودة"
+        },
+        {
+          "en": "final terms",
+          "ar": "الشروط النهائية"
+        }
+      ]
+    }
+  ],
+  "sentencesAr": {
+    "Hello! How can I help you?": "مرحبًا! كيف يمكنني مساعدتك؟",
+    "I am a wholesale buyer interested in your sweets.": "أنا مشترٍ بالجملة ومهتم بحلوياتكم.",
+    "Where is my shipment?": "أين شحنتي؟",
+    "Please cancel the order.": "يرجى إلغاء الطلب.",
+    "We produce chocolates and biscuits.": "ننتج الشوكولاتة والبسكويت.",
+    "The delivery is late.": "التسليم متأخر.",
+    "Could you send me your catalogue?": "هل يمكنك إرسال الكتالوج؟",
+    "We have received the goods.": "لقد استلمنا البضاعة.",
+    "We can discuss the products tomorrow morning.": "يمكننا مناقشة المنتجات صباح الغد.",
+    "What is the expiry date?": "ما تاريخ انتهاء الصلاحية؟",
+    "I need a refund.": "أحتاج إلى استرداد المبلغ.",
+    "Can we speak at ten in the morning?": "هل يمكننا التحدث في العاشرة صباحًا؟",
+    "This is our best-selling chocolate.": "هذه هي الشوكولاتة الأكثر مبيعًا لدينا.",
+    "Please send the ingredients and allergen information.": "يرجى إرسال المكونات ومعلومات مسببات الحساسية.",
+    "The packaging is beautiful.": "العبوة جميلة.",
+    "I will assume it contains no nuts.": "سأفترض أنها لا تحتوي على مكسرات.",
+    "The shelf life is twelve months.": "مدة الصلاحية اثنا عشر شهرًا.",
+    "Is this your email?": "هل هذا بريدك الإلكتروني؟",
+    "How much shelf life will remain on delivery?": "كم سيتبقى من مدة الصلاحية عند التسليم؟",
+    "Can I call you tomorrow?": "هل يمكنني الاتصال بك غدًا؟",
+    "We will send you samples this week.": "سنرسل لكم عينات هذا الأسبوع.",
+    "Please change our brand name.": "يرجى تغيير اسم علامتنا التجارية.",
+    "Is the price in dollars?": "هل السعر بالدولار؟",
+    "Will the final products match these samples?": "هل ستطابق المنتجات النهائية هذه العينات؟",
+    "Our minimum is one hundred cartons per flavour.": "الحد الأدنى لدينا مئة كرتون لكل نكهة.",
+    "Can we combine flavours for a smaller trial order?": "هل يمكننا الجمع بين النكهات في طلب تجريبي أصغر؟",
+    "Please send the tracking number.": "يرجى إرسال رقم التتبع.",
+    "We received one hundred cartons.": "استلمنا مئة كرتون.",
+    "This is our standard wholesale price.": "هذا سعر الجملة المعتاد لدينا.",
+    "I will accept any price.": "سأقبل أي سعر.",
+    "If we increase the quantity, can you lower the unit price?": "إذا زدنا الكمية، هل يمكنكم خفض سعر الوحدة؟",
+    "The goods arrived damaged.": "وصلت البضاعة تالفة.",
+    "Are you ready to confirm the order?": "هل أنتم مستعدون لتأكيد الطلب؟",
+    "Yes, all costs are clear.": "نعم، جميع التكاليف واضحة.",
+    "I do not need an invoice.": "لا أحتاج إلى فاتورة.",
+    "Before confirming, does this price include shipping?": "قبل التأكيد، هل يشمل هذا السعر الشحن؟",
+    "We can dispatch your chocolate next week.": "يمكننا إرسال شحنة الشوكولاتة الخاصة بكم الأسبوع القادم.",
+    "How will you protect it from heat during transport?": "كيف ستحمونها من الحرارة أثناء النقل؟",
+    "What is your company name?": "ما اسم شركتكم؟",
+    "Please use our old address.": "يرجى استخدام عنواننا القديم.",
+    "Please check the shipping documents.": "يرجى التحقق من مستندات الشحن.",
+    "Everything matches.": "كل شيء متطابق.",
+    "The quantities do not match. Please correct the documents.": "الكميات غير متطابقة. يرجى تصحيح المستندات.",
+    "We would like more flavours.": "نود المزيد من النكهات.",
+    "The shipment has left our warehouse.": "غادرت الشحنة مستودعنا.",
+    "Can you send samples?": "هل يمكنكم إرسال عينات؟",
+    "We are based in Istanbul.": "مقرنا في إسطنبول.",
+    "What is the expected arrival date?": "ما تاريخ الوصول المتوقع؟",
+    "Did the shipment arrive safely?": "هل وصلت الشحنة بسلام؟",
+    "Some cartons arrived damaged. We have attached photos.": "وصلت بعض الكراتين تالفة. وقد أرفقنا صورًا.",
+    "You are always wrong.": "أنتم مخطئون دائمًا.",
+    "Please ignore the shipment.": "يرجى تجاهل الشحنة.",
+    "How would you like us to resolve this?": "كيف تودون أن نحل هذه المشكلة؟",
+    "We have no customers.": "ليس لدينا عملاء.",
+    "Please arrange replacements for the missing items.": "يرجى ترتيب بدائل للأصناف الناقصة.",
+    "What is your catalogue?": "ما هو الكتالوج الخاص بكم؟",
+    "We can send replacement products.": "يمكننا إرسال منتجات بديلة.",
+    "Do you sell chocolate?": "هل تبيعون الشوكولاتة؟",
+    "There is nothing to discuss.": "لا يوجد ما نناقشه.",
+    "Please confirm when the replacements will arrive.": "يرجى تأكيد موعد وصول البدائل.",
+    "We cannot reduce the unit price further.": "لا يمكننا خفض سعر الوحدة أكثر من ذلك.",
+    "Could you include delivery or offer more flexible payment terms?": "هل يمكنكم تضمين التسليم أو تقديم شروط دفع أكثر مرونة؟",
+    "Then our discussion is useless.": "إذن نقاشنا عديم الفائدة.",
+    "Please remove all product specifications.": "يرجى حذف جميع مواصفات المنتج.",
+    "Production is delayed by two weeks.": "تأخر الإنتاج أسبوعين.",
+    "Any date will do.": "أي موعد يناسبنا.",
+    "Could you propose a partial shipment and a realistic recovery plan?": "هل يمكنكم اقتراح شحنة جزئية وخطة معالجة واقعية؟",
+    "We no longer need updates.": "لم نعد بحاجة إلى تحديثات.",
+    "We agree with the changes discussed.": "نوافق على التغييرات التي ناقشناها.",
+    "No written details are needed.": "لا حاجة إلى تفاصيل مكتوبة.",
+    "Please ship any products you choose.": "يرجى شحن أي منتجات تختارونها.",
+    "Please send the revised terms in writing for our review.": "يرجى إرسال الشروط المعدلة كتابةً لنراجعها.",
+    "The shipment was exposed to hot weather.": "تعرضت الشحنة لطقس حار.",
+    "Please send the temperature record for this shipment.": "يرجى إرسال سجل درجات الحرارة لهذه الشحنة.",
+    "Please send your logo.": "يرجى إرسال شعاركم.",
+    "The price is too low.": "السعر منخفض أكثر من اللازم.",
+    "Are the samples approved?": "هل تم اعتماد العينات؟",
+    "Yes, change anything you like.": "نعم، غيّروا ما تشاؤون.",
+    "Approval is subject to the final goods matching these specifications.": "الموافقة مشروطة بمطابقة البضاعة النهائية لهذه المواصفات.",
+    "Please cancel the meeting.": "يرجى إلغاء الاجتماع.",
+    "Can we treat your forecast as a confirmed order?": "هل يمكننا اعتبار توقعاتكم طلبًا مؤكدًا؟",
+    "Yes, ship any quantity.": "نعم، اشحنوا أي كمية.",
+    "We do not track sales.": "نحن لا نتابع المبيعات.",
+    "No, we will issue a separate purchase order after approval.": "لا، سنصدر أمر شراء منفصلًا بعد الاعتماد.",
+    "We want an exclusive distribution agreement.": "نريد اتفاقية توزيع حصري.",
+    "Let us agree on the territory, targets, and review period first.": "دعنا نتفق أولًا على المنطقة والأهداف وفترة المراجعة.",
+    "We accept every condition.": "نقبل كل شرط.",
+    "Please change the flavour.": "يرجى تغيير النكهة.",
+    "The unit price is fixed for this quarter.": "سعر الوحدة ثابت لهذا الربع من السنة.",
+    "Then there is nothing to discuss.": "إذن لا يوجد ما نناقشه.",
+    "Could we discuss delivery costs and payment terms instead?": "هل يمكننا مناقشة تكاليف التسليم وشروط الدفع بدلًا من ذلك؟",
+    "We will pay an unknown amount.": "سندفع مبلغًا غير معروف.",
+    "It sounds like we have reached an agreement.": "يبدو أننا توصلنا إلى اتفاق.",
+    "No follow-up is necessary.": "لا حاجة إلى متابعة.",
+    "Send any goods tomorrow.": "أرسلوا أي بضاعة غدًا.",
+    "Please send a written summary with responsibilities and deadlines.": "يرجى إرسال ملخص مكتوب يتضمن المسؤوليات والمواعيد النهائية."
+  }
+}

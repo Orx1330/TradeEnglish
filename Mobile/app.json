@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Trade English",
+    "slug": "trade-english",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F4F2E9",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.orx.tradeenglish",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "يستخدم التطبيق الميكروفون لتسجيل صوتك وأنت تقرأ الجمل، ويُحفظ التسجيل على جهازك فقط.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.orx.tradeenglish",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#3FAE5A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "يستخدم التطبيق الميكروفون لتسجيل صوتك وأنت تقرأ الجمل، ويُحفظ التسجيل على جهازك فقط."
+        }
+      ],
+      "expo-font",
+      "expo-asset"
+    ]
+  }
+}
