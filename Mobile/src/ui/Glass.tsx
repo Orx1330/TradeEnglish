@@ -62,6 +62,19 @@ export function Glass({ children, style, radius = 28, tint, interactive, intensi
 }
 
 /**
+ * Android draws an elevation shadow under the whole view, so a see-through background lets it
+ * show as a grey frame around a pale box. There, elevated surfaces get the same colour made opaque
+ * over the page background, which looks identical without the artefact.
+ */
+const PAGE = [0xff, 0xfc, 0xf5];
+function opaque(color: string) {
+  const m = /^rgba\((\d+),\s*(\d+),\s*(\d+),\s*([\d.]+)\)$/.exec(color);
+  if (!m) return color;
+  const a = Number(m[4]);
+  return `rgb(${PAGE.map((bg, i) => Math.round(Number(m[i + 1]) * a + bg * (1 - a))).join(',')})`;
+}
+
+/**
  * Content surface inside scrolling pages. Deliberately not real glass: Apple reserves Liquid Glass
  * for the navigation layer, and dozens of live blurs in a list would cost frames.
  */
@@ -81,7 +94,7 @@ export function Card({
   return (
     <View
       style={[
-        { borderRadius: radius, backgroundColor: color, borderWidth: 1, borderColor: C.hairline },
+        { borderRadius: radius, backgroundColor: Platform.OS === 'android' ? opaque(color) : color, borderWidth: 1, borderColor: C.hairline },
         shadow(depth),
         style,
       ]}>
